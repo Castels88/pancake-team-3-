@@ -1,0 +1,7 @@
+@mixin fontStyle($pixel, $weight) {
+    font-size: $pixel;
+    font-weight: $weight;
+}
+* {
+    font-family: 'Kanit';
+}
