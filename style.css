@@ -1,3 +1,96 @@
+* {
+  font-family: "Kanit";
+}
 
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=style.css.map */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(231, 227, 235);
+  transform: translate3d(0px, 0px, 0px);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sinistra {
+  width: 60%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bottoni {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navmenubuttons {
+  text-align:start;
+  padding:8px;
+  border:1px solid rgb(255, 255, 255);
+  background-color:rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #7A6EAA;
+  font-weight:bold;
+  transition: all 0.3s ease;
+  
+}
+.navmenubuttons ul {
+  display: none;
+  text-decoration: none;
+}
+.navmenubuttons:hover{
+    border:1px solid rgb(216, 212, 212);
+    background-color: rgb(216, 212, 212);
+    border-radius: 10px;
+}
+
+.destra{
+  width: 40%;
+  height: 36px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-evenly; 
+  align-items: center;
+}
+.mainbuttons {
+  display: flex;
+  align-items: center;
+  border:1px solid #1FC7D4;
+  border-radius:20px;
+  width:140px;
+  height: 35px;
+  padding:15px;
+  font-weight:bold;
+  font-size:16px;
+  color:white;
+  background-color: #1FC7D4;
+  transition: all 0.3s ease;
+}
+  
+.mainbuttons:hover {
+  background-color: #1D8999;
+  border:1px solid #1D8999;
+  border-radius: 20px;
+  color:white;
+  }
+  .money{
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
