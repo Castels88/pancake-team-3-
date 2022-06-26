@@ -1,0 +1,16 @@
+.navmenubuttons {
+    text-align:start;
+    padding:8px;
+    width:180px;
+    border:1px solid #27262C;
+    background-color:#27262C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #7A6EAA;
+    font-weight:bold;
+    transition: all 0.3s ease;
+    &:hover {
+    border:1px solid #353547;
+    background-color: #353547;
+    }
+   }

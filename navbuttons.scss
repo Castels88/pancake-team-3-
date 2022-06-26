@@ -1,0 +1,13 @@
+.navbuttons {
+    border:1px solid #27262C;
+    background-color:#27262C;
+    border-radius:5px;
+    padding:8px;
+    color: #7A6EAA;
+    font-weight:bold;
+    transition: all 0.3s ease;
+    &:hover {
+    border:1px solid #353547;
+    background-color: #353547;
+    }
+   }

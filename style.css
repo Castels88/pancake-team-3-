@@ -1,3 +1,92 @@
+.navbuttons {
+  border: 1px solid #27262C;
+  background-color: #27262C;
+  border-radius: 5px;
+  padding: 8px;
+  color: #7A6EAA;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.navbuttons:hover {
+  border: 1px solid #353547;
+  background-color: #353547;
+}
 
+.navmenubuttons {
+  text-align: start;
+  padding: 8px;
+  width: 180px;
+  border: 1px solid #27262C;
+  background-color: #27262C;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #7A6EAA;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.navmenubuttons:hover {
+  border: 1px solid #353547;
+  background-color: #353547;
+}
+
+.mainbuttons {
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 140px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  background-color: #1FC7D4;
+  transition: all 0.3s ease;
+}
+.mainbuttons:hover {
+  background-color: #1D8999;
+  border: 1px solid #1D8999;
+  color: #AFADB4;
+}
+
+.mainbuttons-2 {
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 110px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1FC7D4;
+  background-color: #1B152C;
+  transition: all 0.3s ease;
+}
+.mainbuttons-2:hover {
+  color: #1D8999;
+  border: 1px solid #1D8999;
+}
+
+.learnlink {
+  color: #1FC7D4;
+  text-decoration: none;
+  font-weight: bold;
+}
+.learnlink:hover {
+  text-decoration: underline;
+}
+
+.footerlink-contact {
+  color: #FFB237;
+  text-decoration: none;
+}
+.footerlink-contact:hover {
+  color: #FFB237;
+  text-decoration: underline;
+}
+
+.footerlinks {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+.footerlinks:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */
