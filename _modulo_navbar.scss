@@ -37,6 +37,11 @@ nav {
                 transition: all 0.3s ease;
                 cursor: pointer;
                 list-style-type: none;
+                &:hover{
+                    border:1px solid rgb(216, 212, 212);
+                    background-color: rgb(216, 212, 212);
+                    border-radius: 10px;
+                }
                 li a{
                     text-decoration: none;
                     color: #7A6EAA;
