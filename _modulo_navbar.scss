@@ -47,7 +47,7 @@ nav {
                     color: #7A6EAA;
                 }
                 .dropdown_content{
-                    display: none;
+                    display: flex;
                     position: absolute;
                     background-color: rgb(255, 255, 255);
                     border: 1px solid rgb(231, 227, 235);
@@ -58,12 +58,11 @@ nav {
                     width: 280px;
                     height: 200px;
                     z-index: 1001;
-                    display: flex;
                     flex-direction: column;
                         .element{
+                            display: block;
                             height: 48px;
                             width: 100%;
-                            display: flex;
                             align-items: center;
                             padding: 10px;
                             &:hover{
