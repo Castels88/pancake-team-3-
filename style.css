@@ -1,12 +1,8 @@
 * {
-  font-family: "Kanit";
-}
-
-body {
-  height: 100vh;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kanit";
 }
 
 nav {
@@ -19,79 +15,87 @@ nav {
   padding-left: 16px;
   padding-right: 16px;
 }
-
-.sinistra {
+nav .sinistra {
   width: 60%;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.bottoni {
+nav .sinistra .bottoni {
   display: flex;
   width: 300px;
   justify-content: space-around;
   align-items: center;
 }
-
-.navmenubuttons {
-  text-align:start;
-  padding:8px;
-  border:1px solid rgb(255, 255, 255);
-  background-color:rgb(255, 255, 255);
+nav .sinistra .bottoni .navmenubuttons {
+  text-align: start;
+  padding: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #7A6EAA;
-  font-weight:bold;
+  font-weight: bold;
   transition: all 0.3s ease;
   cursor: pointer;
   list-style-type: none;
 }
-
-.navmenubuttons li a {
+nav .sinistra .bottoni .navmenubuttons li a {
   text-decoration: none;
   color: #7A6EAA;
 }
-
-.navmenubuttons:hover{
-    border:1px solid rgb(216, 212, 212);
-    background-color: rgb(216, 212, 212);
-    border-radius: 10px;
-}
-.destra{
+nav .destra {
   width: 40%;
   height: 36px;
   display: flex;
   justify-content: flex-end;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: center;
 }
-.mainbuttons {
+nav .destra .money {
+  color: rgb(122, 110, 170);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav .destra .navmenubuttons {
+  text-align: start;
+  padding: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #7A6EAA;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  list-style-type: none;
+}
+nav .destra .mainbuttons {
   display: flex;
   align-items: center;
-  border:1px solid #1FC7D4;
-  border-radius:20px;
-  width:140px;
+  border: 1px solid #1FC7D4;
+  border-radius: 20px;
+  width: 140px;
   height: 35px;
-  padding:15px;
-  font-weight:bold;
-  font-size:16px;
-  color:white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
   background-color: #1FC7D4;
   transition: all 0.3s ease;
 }
-  
-.mainbuttons:hover {
+nav .destra .mainbuttons:hover {
   background-color: #1D8999;
-  border:1px solid #1D8999;
+  border: 1px solid #1D8999;
   border-radius: 20px;
-  color:white;
-  }
-  .money{
-    color: rgb(122, 110, 170);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
+  color: white;
+}
+
+* {
+  font-family: "Kanit";
+}
+
+/*# sourceMappingURL=style.css.map */
