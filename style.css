@@ -23,6 +23,9 @@ nav .sinistra {
   justify-content: flex-start;
 }
 nav .sinistra .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -35,8 +38,9 @@ nav .sinistra .bottoni {
   padding-top: 8px;
 }
 nav .sinistra .bottoni .navmenubuttons {
-  padding: 8px;
-  height: 100%;
+  height: 90%;
+  padding: 5px;
+  margin-top: 3px;
   text-align: start;
   border: 1px solid rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
@@ -55,6 +59,8 @@ nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content {
 }
 nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content:hover .element {
   display: block;
+  display: flex;
+  justify-content: space-between;
 }
 nav .sinistra .bottoni .navmenubuttons li a {
   text-decoration: none;
@@ -75,6 +81,8 @@ nav .sinistra .bottoni .navmenubuttons .dropdown_content {
   flex-direction: column;
 }
 nav .sinistra .bottoni .navmenubuttons .dropdown_content .element {
+  display: flex;
+  justify-content: space-between;
   height: 48px;
   width: 100%;
   align-items: center;
@@ -88,10 +96,9 @@ nav .sinistra .bottoni .navmenubuttons .dropdown_content .element:hover {
 }
 nav .destra {
   width: 40%;
-  height: 36px;
+  height: 56px;
   display: flex;
   justify-content: flex-end;
-  justify-content: space-evenly;
   align-items: center;
 }
 nav .destra .money {
@@ -100,50 +107,47 @@ nav .destra .money {
   line-height: 1.5;
   font-size: 16px;
   font-weight: bold;
+  padding: 10px;
 }
-nav .destra .navmenubuttons {
-  text-align: start;
-  padding: 8px;
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  color: #7A6EAA;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  list-style-type: none;
+nav .destra .language {
+  height: 100%;
+  display: flex;
 }
-nav .destra .navmenubuttons:hover .dropdown_content {
+nav .destra .language:hover .dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
 }
-nav .destra .navmenubuttons li a {
-  text-decoration: none;
-  color: #7A6EAA;
+nav .destra .language:hover .dropdown_content:hover .element {
+  display: block;
 }
-nav .destra .navmenubuttons .dropdown_content {
+nav .destra .language .dropdown_content {
+  overflow-y: scroll;
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
-  margin-top: 20px;
+  margin-top: 55px;
   padding-bottom: 4px;
   padding-top: 4px;
-  width: 280px;
-  height: auto;
-  z-index: 1001;
+  width: 150px;
+  max-height: 180px;
   flex-direction: column;
 }
-nav .destra .navmenubuttons .dropdown_content .element {
+nav .destra .language .dropdown_content .element {
   height: 48px;
   width: 100%;
   align-items: center;
   padding: 10px;
 }
-nav .destra .navmenubuttons .dropdown_content .element:hover {
+nav .destra .language .dropdown_content .element a {
+  text-decoration: none;
+  color: rgb(40, 13, 95);
+  font-weight: bold;
+}
+nav .destra .language .dropdown_content .element:hover {
+  display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
   border-radius: 10px;
