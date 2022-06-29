@@ -20,14 +20,21 @@ nav {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        .logo{
+            font-size: 20px;
+            font-weight: bolder;
+        }
         .bottoni{
             display: flex;
             width: 300px;
             justify-content: space-around;
             align-items: center;
+            height: 100%;
+            padding-top: 8px;
             .navmenubuttons{
+                padding: 8px;
+                height: 100%;
                 text-align:start;
-                padding:8px;
                 border:1px solid rgb(255, 255, 255);
                 background-color:rgb(255, 255, 255);
                 border-top-left-radius: 5px;
@@ -37,17 +44,21 @@ nav {
                 transition: all 0.3s ease;
                 cursor: pointer;
                 list-style-type: none;
-                &:hover{
+                &:hover .dropdown_content{
                     border:1px solid rgb(216, 212, 212);
-                    background-color: rgb(216, 212, 212);
+                    // background-color: rgb(216, 212, 212);
                     border-radius: 10px;
+                    display: block;
+                    &:hover .element{
+                        display: block;
+                    }
                 }
                 li a {
                     text-decoration: none;
                     color: #7A6EAA;
                 }
                 .dropdown_content{
-                    display: flex;
+                    display: none;
                     position: absolute;
                     background-color: rgb(255, 255, 255);
                     border: 1px solid rgb(231, 227, 235);
@@ -56,16 +67,16 @@ nav {
                     padding-bottom: 4px;
                     padding-top: 4px;
                     width: 280px;
-                    height: 200px;
+                    height:auto;
                     z-index: 1001;
                     flex-direction: column;
-                        .element{
-                            display: block;
+                        .element {
                             height: 48px;
                             width: 100%;
                             align-items: center;
                             padding: 10px;
                             &:hover{
+                                display: block;
                                 border:1px solid rgb(216, 212, 212);
                                 background-color: rgb(216, 212, 212);
                                 border-radius: 10px;
@@ -103,6 +114,39 @@ nav {
             transition: all 0.3s ease;
             cursor: pointer;
             list-style-type: none;
+            &:hover .dropdown_content{
+                border:1px solid rgb(216, 212, 212);
+                // background-color: rgb(216, 212, 212);
+                border-radius: 10px;
+                display: block;}
+                li a {
+                    text-decoration: none;
+                    color: #7A6EAA;}
+            .dropdown_content{
+                display: none;
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(231, 227, 235);
+                border-radius: 16px;
+                margin-top: 20px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                width: 280px;
+                height:auto;
+                z-index: 1001;
+                flex-direction: column;
+                    .element {
+                        height: 48px;
+                        width: 100%;
+                        align-items: center;
+                        padding: 10px;
+                        &:hover{
+                            border:1px solid rgb(216, 212, 212);
+                            background-color: rgb(216, 212, 212);
+                            border-radius: 10px;
+                        }
+                    }
+            }
             }
         .mainbuttons{
             display: flex;

@@ -22,15 +22,22 @@ nav .sinistra {
   align-items: center;
   justify-content: flex-start;
 }
+nav .sinistra .logo {
+  font-size: 20px;
+  font-weight: bolder;
+}
 nav .sinistra .bottoni {
   display: flex;
   width: 300px;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
+  padding-top: 8px;
 }
 nav .sinistra .bottoni .navmenubuttons {
-  text-align: start;
   padding: 8px;
+  height: 100%;
+  text-align: start;
   border: 1px solid rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 5px;
@@ -41,17 +48,20 @@ nav .sinistra .bottoni .navmenubuttons {
   cursor: pointer;
   list-style-type: none;
 }
-nav .sinistra .bottoni .navmenubuttons:hover {
+nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content {
   border: 1px solid rgb(216, 212, 212);
-  background-color: rgb(216, 212, 212);
   border-radius: 10px;
+  display: block;
+}
+nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content:hover .element {
+  display: block;
 }
 nav .sinistra .bottoni .navmenubuttons li a {
   text-decoration: none;
   color: #7A6EAA;
 }
 nav .sinistra .bottoni .navmenubuttons .dropdown_content {
-  display: flex;
+  display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
@@ -60,18 +70,18 @@ nav .sinistra .bottoni .navmenubuttons .dropdown_content {
   padding-bottom: 4px;
   padding-top: 4px;
   width: 280px;
-  height: 200px;
+  height: auto;
   z-index: 1001;
   flex-direction: column;
 }
 nav .sinistra .bottoni .navmenubuttons .dropdown_content .element {
-  display: block;
   height: 48px;
   width: 100%;
   align-items: center;
   padding: 10px;
 }
 nav .sinistra .bottoni .navmenubuttons .dropdown_content .element:hover {
+  display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
   border-radius: 10px;
@@ -103,6 +113,40 @@ nav .destra .navmenubuttons {
   transition: all 0.3s ease;
   cursor: pointer;
   list-style-type: none;
+}
+nav .destra .navmenubuttons:hover .dropdown_content {
+  border: 1px solid rgb(216, 212, 212);
+  border-radius: 10px;
+  display: block;
+}
+nav .destra .navmenubuttons li a {
+  text-decoration: none;
+  color: #7A6EAA;
+}
+nav .destra .navmenubuttons .dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 16px;
+  margin-top: 20px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  width: 280px;
+  height: auto;
+  z-index: 1001;
+  flex-direction: column;
+}
+nav .destra .navmenubuttons .dropdown_content .element {
+  height: 48px;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+nav .destra .navmenubuttons .dropdown_content .element:hover {
+  border: 1px solid rgb(216, 212, 212);
+  background-color: rgb(216, 212, 212);
+  border-radius: 10px;
 }
 nav .destra .mainbuttons {
   display: flex;
