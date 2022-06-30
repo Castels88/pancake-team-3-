@@ -19,6 +19,53 @@
   border-radius: 8px;
 }
 
+.appear_elio {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  inset: 0px;
+  z-index: 99;
+  will-change: opacity;
+}
+.appear_elio .presentation_elio {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 13, 95, 0.6);
+  z-index: 20;
+  will-change: opacity;
+  animation: 350ms ease 0s 1 normal forwards running dHqLl;
+}
+.appear_elio .settings_menu_elio {
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 32px;
+  width: 420px;
+  height: calc(var(--vh, 1vh) * 75);
+  z-index: 100;
+}
+.appear_elio .settings_menu_elio .settings_top_elio {
+  height: 80px;
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(40, 13, 95);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
