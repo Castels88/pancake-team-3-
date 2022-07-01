@@ -73,7 +73,6 @@
   padding: 10px;
 }
 .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio {
-  border-bottom: 1px solid rgb(231, 227, 235);
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -95,6 +94,37 @@
   font-weight: 800;
   font-size: 16px;
 }
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .switch_elio {
+  width: 56px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(189, 194, 196);
+  border-radius: 24px;
+  box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+  -webkit-box-align: center;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .switch_elio input {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .switch_elio .sole {
+  fill: rgb(252, 249, 72);
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  width: 50%;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .switch_elio .luna {
+  fill: white;
+}
 .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .font_settings2_elio {
   color: rgb(40, 13, 95);
   font-weight: 800;
@@ -112,6 +142,7 @@
   align-items: center;
   width: 140px;
   height: 35px;
+  border: 0px;
   border-radius: 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
@@ -127,6 +158,72 @@
   color: white;
   background-color: rgb(31, 199, 212);
   margin-right: 4px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(231, 227, 235);
+  height: 150px;
+  margin-top: 10px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .font_settings1_elio {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  color: rgb(118, 69, 217);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .font_settings2_elio {
+  color: rgb(40, 13, 95);
+  font-weight: 800;
+  font-size: 16px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .trebottoni_elio {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .trebottoni_elio .btn_settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 35px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  -webkit-box-pack: center;
+  letter-spacing: 0.03em;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 16px;
+  color: white;
+  background-color: rgb(31, 199, 212);
+  margin-right: 4px;
+}
+.appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .trebottoni_elio .percetuale_elio {
+  color: rgb(31, 199, 212);
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: 2px;
+  line-height: 1.5;
 }
 
 nav {
@@ -245,6 +342,9 @@ nav .destra .language:hover .dropdown_content {
 nav .destra .language:hover .dropdown_content:hover .element {
   display: block;
 }
+nav .destra .language svg {
+  fill: rgb(118, 69, 217);
+}
 nav .destra .language .dropdown_content {
   overflow-y: scroll;
   display: none;
@@ -279,6 +379,9 @@ nav .destra .language .dropdown_content .element:hover {
 nav .destra .settings_elio {
   background-color: white;
   border: 1px solid white;
+}
+nav .destra .settings_elio svg {
+  fill: rgb(118, 69, 217);
 }
 nav .destra .mainbuttons {
   display: flex;

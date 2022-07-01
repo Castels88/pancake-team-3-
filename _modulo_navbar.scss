@@ -68,7 +68,6 @@
             height: 100%;
             padding: 10px;
             .primo_conteiner_elio{
-                border-bottom: 1px solid rgb(231, 227, 235);
                 height: 200px;
                 display: flex; 
                 flex-direction: column;
@@ -88,6 +87,37 @@
                         font-weight: 800;
                         font-size: 16px;
                     }
+                    .switch_elio{
+                        width: 56px;
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        background-color: rgb(189, 194, 196);
+                        border-radius: 24px;
+                        box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+                        cursor: pointer;
+                        transition: background-color 200ms ease 0s;
+                        -webkit-box-align: center;
+                        input{
+                            width: 50px;
+                            height: 50px;
+                            cursor: pointer;
+                            opacity: 0;
+                            z-index: 3;
+                            position: absolute;
+                        }
+                        .sole{
+                            fill: rgb(252, 249, 72);
+                            background-color: white;
+                            border-radius: 100%;
+                            box-shadow: rgba(0, 0, 0, 0.5);
+                            width: 50%;
+                        }
+                        .luna{
+                            fill: white;
+                        }
+                    }
                 }
                 .font_settings2_elio{
                     color: rgb(40, 13, 95);
@@ -105,6 +135,7 @@
                         align-items: center;
                         width:140px;
                         height: 35px;
+                        border: 0px;
                         border-radius: 16px;
                         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
                         cursor: pointer;
@@ -120,6 +151,72 @@
                         color: white;
                         background-color: rgb(31, 199, 212);
                         margin-right: 4px;
+                    }
+                }
+            }
+            .secondo_container_elio{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-top: 1px solid rgb(231, 227, 235);
+                height: 150px;
+                margin-top: 10px;
+                .font_settings1_elio{
+                    display: flex;
+                    align-items: center;
+                    height: 30%;
+                    color: rgb(118, 69, 217);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+                .liquidity_swap_elio{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 100%;
+                    .font_settings2_elio{
+                        color: rgb(40, 13, 95);
+                        font-weight: 800;
+                        font-size: 16px;
+                    }
+                    .trebottoni_elio{
+                        display: flex;
+                        width: 100%;
+                        height: 20px;
+                        margin-bottom:10px;
+                        .btn_settings{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width:65px;
+                            height: 35px;
+                            border: 0px;
+                            border-radius: 16px;
+                            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                            cursor: pointer;
+                            font-family: inherit;
+                            font-size: 16px;
+                            font-weight: 800;
+                            -webkit-box-pack: center;
+                            letter-spacing: 0.03em;
+                            opacity: 1;
+                            outline: 0px;
+                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                            padding: 16px;
+                            color: white;
+                            background-color: rgb(31, 199, 212);
+                            margin-right: 4px;
+                        }
+                        .percetuale_elio{
+                            color: rgb(31, 199, 212);
+                            font-weight: 800;
+                            font-size: 16px;
+                            margin-left: 2px;
+                            line-height: 1.5;
+                        }
                     }
                 }
             }
@@ -248,6 +345,9 @@ nav {
                     display: block;
                 }
             }
+            svg{
+                fill:rgb(118, 69, 217)
+            }
             .dropdown_content{
                 overflow-y:scroll;
                 display: none;
@@ -284,6 +384,9 @@ nav {
         .settings_elio{
             background-color: white;
             border: 1px solid white;
+            svg{
+                fill:rgb(118, 69, 217);
+            }
         }    
         
         .mainbuttons{
