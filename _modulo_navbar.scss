@@ -46,7 +46,7 @@
         border: 1px solid rgb(231, 227, 235);
         border-radius: 32px;
         width: 420px;
-        height: calc(var(--vh,1vh) * 75);
+        height: calc(var(--vh,1vh) * 100);
         z-index: 100;
         .settings_top_elio{
             height: 80px;
@@ -61,7 +61,71 @@
             font-weight: bolder;
             color: rgb(40, 13, 95),           
         }
-        
+        .settings_scroolbar_elio{
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            height: 100%;
+            padding: 10px;
+            .primo_conteiner_elio{
+                border-bottom: 1px solid rgb(231, 227, 235);
+                height: 200px;
+                display: flex; 
+                flex-direction: column;
+                justify-content: space-around;
+                .font_settings1_elio{
+                    color: rgb(118, 69, 217);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+                .sub_container_elio{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                    .font_settings2_elio{
+                        color: rgb(40, 13, 95);
+                        font-weight: 800;
+                        font-size: 16px;
+                    }
+                }
+                .font_settings2_elio{
+                    color: rgb(40, 13, 95);
+                    font-weight: 800;
+                    font-size: 16px;
+                }
+                .trebottoni_elio{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 20px;
+                    margin-bottom:10px;
+                    .btn_settings{
+                        display: flex;
+                        align-items: center;
+                        width:140px;
+                        height: 35px;
+                        border-radius: 16px;
+                        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                        cursor: pointer;
+                        font-family: inherit;
+                        font-size: 16px;
+                        font-weight: 800;
+                        -webkit-box-pack: center;
+                        letter-spacing: 0.03em;
+                        opacity: 1;
+                        outline: 0px;
+                        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                        padding: 16px;
+                        color: white;
+                        background-color: rgb(31, 199, 212);
+                        margin-right: 4px;
+                    }
+                }
+            }
+            
+        }
+
     }
 }
 
@@ -138,21 +202,21 @@ nav {
                     height:auto;
                     z-index: 1001;
                     flex-direction: column;
-                        .element {
-                            display: flex;
-                            justify-content: space-between;
-                            height: 48px;
-                            width: 100%;
-                            align-items: center;
-                            padding: 10px;
-                            &:hover{
-                                display: block;
-                                border:1px solid rgb(216, 212, 212);
-                                background-color: rgb(216, 212, 212);
-                                border-radius: 10px;
+                    .element {
+                        display: flex;
+                        justify-content: space-between;
+                        height: 48px;
+                        width: 100%;
+                        align-items: center;
+                        padding: 10px;
+                        &:hover{
+                            display: block;
+                            border:1px solid rgb(216, 212, 212);
+                            background-color: rgb(216, 212, 212);
+                            border-radius: 10px;
                                 
-                            }
                         }
+                    }
                 }
                 
             }
@@ -172,7 +236,7 @@ nav {
             font-size: 16px;
             font-weight: bold;
             padding: 10px;
-            }
+        }
         .language {
             height: 100%;
             display: flex;
@@ -197,24 +261,29 @@ nav {
                 width: 150px;
                 max-height:180px;
                 flex-direction: column ;
-                    .element{
-                        height: 48px;
-                        width: 100%;
-                        align-items: center;
-                        padding: 10px;
-                        a {
-                            text-decoration: none;
-                            color: rgb(40, 13, 95);
-                            font-weight:bold;
-                        }
-                    &:hover{
-                        display: block;
-                        border:1px solid rgb(216, 212, 212);
-                        background-color: rgb(216, 212, 212);
-                        border-radius: 10px;
-                        }    
+                .element{
+                    height: 48px;
+                    width: 100%;
+                    align-items: center;
+                    padding: 10px;
+                    a {
+                        text-decoration: none;
+                        color: rgb(40, 13, 95);
+                        font-weight:bold;
                     }
-            }    
+                    &:hover{
+                    display: block;
+                    border:1px solid rgb(216, 212, 212);
+                    background-color: rgb(216, 212, 212);
+                    border-radius: 10px;
+                    }    
+                }
+            }
+                
+        }
+        .settings_elio{
+            background-color: white;
+            border: 1px solid white;
         }    
         
         .mainbuttons{
@@ -230,12 +299,12 @@ nav {
             color:white;
             background-color: #1FC7D4;
             transition: all 0.3s ease;
-                &:hover{
-                    background-color: #1D8999;
-                    border:1px solid #1D8999;
-                    border-radius: 20px;
-                    color:white;
-                }
+            &:hover{
+                background-color: #1D8999;
+                border:1px solid #1D8999;
+                border-radius: 20px;
+                color:white;
             }
         }
+    }    
 }  
