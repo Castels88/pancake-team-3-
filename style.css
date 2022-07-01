@@ -1,3 +1,93 @@
+@use "moduloRoot";
+* {
+  font-family: 'Kanit';
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+.first-container-Laurent {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fb6f0), to(#e8f1f5));
+  background: linear-gradient(#6fb6f0, #e8f1f5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
+.first-container-Laurent .content-container-Laurent {
+  background-color: #d0e5fa;
+  height: 80vh;
+  width: 500px;
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "title title" "par par" "card card";
+}
+
+.first-container-Laurent .content-container-Laurent .main-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  color: #280D5F;
+  text-align: center;
+}
+
+.first-container-Laurent .content-container-Laurent .main-title .purple-win {
+  color: #7645d9;
+}
+
+.first-container-Laurent .content-container-Laurent .par-container {
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: par;
+  color: rgba(118, 69, 217, 0.5);
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent {
+  padding: 10px;
+  margin: 10px;
+  height: 300px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent {
+  background: -webkit-gradient(linear, left top, left bottom, from(#feb237), to(#ffe668));
+  background: linear-gradient(#feb237, #ffe668);
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7543d8), to(#5121b1));
+  background: linear-gradient(#7543d8, #5121b1);
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
