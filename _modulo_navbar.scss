@@ -169,7 +169,7 @@ nav {
             }
                 
         }
-        .settings_elio{
+        #settings_elio{
             margin-top: 2px;
             background-color: white;
             border: 1px solid white;
@@ -177,8 +177,16 @@ nav {
             svg{
                 fill:rgb(118, 69, 217);
             }
+        }
+        .swap{
+            transition: .4s;
+            opacity: 1;
+        }
+        html.is-animating .swap{
+            transition: .4s;
+            opacity: 0;
+            transform: translateY(-100px);
         }    
-        
         .mainbuttons{
             display: flex;
             align-items: center;
