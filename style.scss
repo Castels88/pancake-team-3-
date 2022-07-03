@@ -1,4 +1,3 @@
-@use "moduloRoot";
 * {
     margin: 0px;
     padding: 0px;
@@ -9,7 +8,19 @@
     box-sizing: border-box;
 }
 
+$headerColor: linear-gradient(0deg, rgba(39, 38, 44, 0.4));
+$mainColor: rgb(118, 69, 217);
+$alternativeColor: #280D5F;
+$mainSecondaryColor: rgb(31, 199, 212);
+$colorOption1: rgb(237, 75, 158);
+$colorOption2: rgb(255, 178, 55);
+$colorOption3: rgb(154, 106, 255);
+$white-writings: rgb(244, 238, 255);
+$lilac-writings: rgb(184, 173, 210);
 .passive-income {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     .centered-pi {
         margin: 0px;
         width: 100%;
@@ -27,15 +38,130 @@
                         height: 414.417px;
                         width: 430px;
                         position: relative;
+                        background-color: cadetblue;
                     }
                 }
             }
             .right-top-pi {
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+                margin-left: 64px;
                 .titolo-pi {
-                    .span-titolo-pi {}
+                    font-size: 40px;
+                    margin-bottom: 24px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color: $white-writings;
+                    .span-titolo-pi {
+                        color: $colorOption3;
+                    }
                 }
-                .slogan-pi {}
-                .explore-learn {}
+                .slogan-pi {
+                    color: $lilac-writings;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                }
+                .explore-learn {
+                    display: flex;
+                    .button-top-pi {
+                        background-color: $mainSecondaryColor;
+                        color: white;
+                        font-weight: 600;
+                        letter-spacing: 0.03em;
+                        line-height: 1;
+                        height: 48px;
+                        padding: 0px 24px;
+                        border-radius: 16px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 16px;
+                        .a-button-top-pi {
+                            text-decoration: none;
+                        }
+                    }
+                    .a-top-pi {
+                        color: $mainSecondaryColor;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        font-size: 16px;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .bottom-pi {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            .div-title-bottom-pi {
+                display: flex;
+                margin-bottom: 24px;
+                .title-bottom-pi {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color: $white-writings;
+                    .span-title-bottom-pi {
+                        color: $colorOption3;
+                    }
+                }
+                .button-bottom-pi {
+                    width: 48px;
+                    .svg-title-bottom-pi {
+                        fill: rgb(184, 173, 210);
+                    }
+                }
+            }
+            .cards-container-pi {
+                height: 80px;
+                .cards-container-pi-1 {
+                    display: grid;
+                    gap: 32px;
+                    grid-template-columns: repeat(5, auto);
+                    .cards-pi {
+                        display: flex;
+                        .inside-cards-pi {
+                            flex-direction: column;
+                            padding-right: 16px;
+                            display: flex;
+                            .title-cards-pi {
+                                color: rgb(154, 106, 255);
+                                font-weight: 600;
+                                line-height: 1.5;
+                                margin-bottom: 8px;
+                                font-size: 12px;
+                            }
+                            .container-div-percentage-pi {
+                                display: flex;
+                                gap: 4px;
+                                .div-percentage-pi {
+                                    color: rgb(244, 238, 255);
+                                    font-weight: 600;
+                                    line-height: 1.1;
+                                    font-size: 16px;
+                                    .span-percentage-pi {
+                                        color: rgb(244, 238, 255);
+                                        font-weight: 600;
+                                        line-height: 1.1;
+                                    }
+                                }
+                            }
+                            .acronym-pi {
+                                color: rgb(184, 173, 210);
+                                font-weight: 400;
+                                line-height: 1.5;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -8,46 +8,10 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  border: 0px none;
-  vertical-align: baseline;
-  font-size: 100%;
-  font-family: "Kanit", sans-serif;
-  box-sizing: border-box;
-}
-
-.centered-pi {
-  margin: 0px;
-  width: 100%;
-  max-width: 968px;
-  padding: 96px;
-}
-.centered-pi .top-pi {
+.passive-income {
   display: flex;
   align-items: center;
-}
-.centered-pi .top-pi .left-top-pi {
-  display: flex;
-  justify-content: center;
-}
-.centered-pi .top-pi .left-top-pi .place-holder {
-  flex: 1 1 0%;
-}
-.centered-pi .top-pi .left-top-pi .place-holder .inside-place-holder {
-  height: 414.417px;
-  width: 430px;
-  position: relative;
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  border: 0px none;
-  vertical-align: baseline;
-  font-size: 100%;
-  font-family: "Kanit", sans-serif;
-  box-sizing: border-box;
+  flex-direction: column;
 }
 
 .passive-income .centered-pi {
@@ -56,21 +20,168 @@
   max-width: 968px;
   padding: 96px;
 }
+
 .passive-income .centered-pi .top-pi {
   display: flex;
   align-items: center;
 }
+
 .passive-income .centered-pi .top-pi .left-top-pi {
   display: flex;
   justify-content: center;
 }
+
 .passive-income .centered-pi .top-pi .left-top-pi .place-holder {
   flex: 1 1 0%;
 }
+
 .passive-income .centered-pi .top-pi .left-top-pi .place-holder .inside-place-holder {
   height: 414.417px;
   width: 430px;
   position: relative;
+  background-color: cadetblue;
 }
 
-/*# sourceMappingURL=style.css.map */
+.passive-income .centered-pi .top-pi .right-top-pi {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-left: 64px;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .titolo-pi {
+  font-size: 40px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #f4eeff;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .titolo-pi .span-titolo-pi {
+  color: #9a6aff;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .slogan-pi {
+  color: #b8add2;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn {
+  display: flex;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn .button-top-pi {
+  background-color: #1fc7d4;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 48px;
+  padding: 0px 24px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn .button-top-pi .a-button-top-pi {
+  text-decoration: none;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn .a-top-pi {
+  color: #1fc7d4;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.passive-income .centered-pi .bottom-pi {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.passive-income .centered-pi .bottom-pi .div-title-bottom-pi {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.passive-income .centered-pi .bottom-pi .div-title-bottom-pi .title-bottom-pi {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #f4eeff;
+}
+
+.passive-income .centered-pi .bottom-pi .div-title-bottom-pi .title-bottom-pi .span-title-bottom-pi {
+  color: #9a6aff;
+}
+
+.passive-income .centered-pi .bottom-pi .div-title-bottom-pi .button-bottom-pi {
+  width: 48px;
+}
+
+.passive-income .centered-pi .bottom-pi .div-title-bottom-pi .button-bottom-pi .svg-title-bottom-pi {
+  fill: #b8add2;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi {
+  height: 80px;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi {
+  display: flex;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi {
+  flex-direction: column;
+  padding-right: 16px;
+  display: flex;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi .title-cards-pi {
+  color: #9a6aff;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi .container-div-percentage-pi {
+  display: flex;
+  gap: 4px;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi .container-div-percentage-pi .div-percentage-pi {
+  color: #f4eeff;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 16px;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi .container-div-percentage-pi .div-percentage-pi .span-percentage-pi {
+  color: #f4eeff;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.passive-income .centered-pi .bottom-pi .cards-container-pi .cards-container-pi-1 .cards-pi .inside-cards-pi .acronym-pi {
+  color: #b8add2;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
