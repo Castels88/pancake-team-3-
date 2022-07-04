@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @use "moduloRoot";
 * {
   font-family: 'Kanit';
@@ -9,6 +10,8 @@
 
 .first-container-Laurent {
   width: 100%;
+  height: 100%;
+  padding: 1.25rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#6fb6f0), to(#e8f1f5));
   background: linear-gradient(#6fb6f0, #e8f1f5);
   display: -webkit-box;
@@ -24,9 +27,10 @@
 
 .first-container-Laurent .content-container-Laurent {
   background-color: #d0e5fa;
-  height: 80vh;
-  width: 500px;
-  border-radius: 50px;
+  padding: 1.25rem 0;
+  height: 34.375rem;
+  width: 60%;
+  border-radius: 3.125rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -35,11 +39,12 @@
 }
 
 .first-container-Laurent .content-container-Laurent .main-title {
+  font-size: 40px;
+  color: #280D5F;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: title;
-  color: #280D5F;
   text-align: center;
 }
 
@@ -53,10 +58,12 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: par;
-  color: rgba(118, 69, 217, 0.5);
+  font-size: 16px;
+  color: #7a6eaa;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent {
+  text-align: center;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -70,24 +77,68 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent {
-  padding: 10px;
-  margin: 10px;
-  height: 300px;
-  width: 200px;
-  border-radius: 50px;
+  padding: 0.625rem;
+  margin: 0.625rem;
+  height: 18.75rem;
+  width: 30%;
+  border-radius: 3.125rem;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-amount {
+  font-size: 24px;
+  color: #280d5f;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button {
+  margin: 10px 0;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 90%;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #1FC7D4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 1.5px 3px black;
+          box-shadow: 0px 1.5px 3px black;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button:hover {
+  background-color: #1D8999;
+  border: 1px solid #1D8999;
+  color: #AFADB4;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent {
   background: -webkit-gradient(linear, left top, left bottom, from(#feb237), to(#ffe668));
   background: linear-gradient(#feb237, #ffe668);
+  margin-right: 1.25rem;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  -webkit-box-shadow: -1px 10px 0px #feb237;
+          box-shadow: -1px 10px 0px #feb237;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent {
   background: -webkit-gradient(linear, left top, left bottom, from(#7543d8), to(#5121b1));
   background: linear-gradient(#7543d8, #5121b1);
   color: white;
+  margin-left: 1.25rem;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  -webkit-box-shadow: -2px 10px 0px #7543d8;
+          box-shadow: -2px 10px 0px #7543d8;
 }
 /*# sourceMappingURL=style.css.map */
