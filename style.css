@@ -169,23 +169,14 @@ nav .destra .language .dropdown_content .element:hover {
   background-color: rgb(216, 212, 212);
   border-radius: 10px;
 }
-nav .destra #settings_elio {
+nav .destra .settings_elio {
   margin-top: 2px;
   background-color: white;
   border: 1px solid white;
   cursor: pointer;
 }
-nav .destra #settings_elio svg {
+nav .destra .settings_elio svg {
   fill: rgb(118, 69, 217);
-}
-nav .destra .swap {
-  transition: 0.4s;
-  opacity: 1;
-}
-nav .destra html.is-animating .swap {
-  transition: 0.4s;
-  opacity: 0;
-  transform: translateY(-100px);
 }
 nav .destra .mainbuttons {
   display: flex;
@@ -200,6 +191,10 @@ nav .destra .mainbuttons {
   color: white;
   background-color: #1FC7D4;
   transition: all 0.3s ease;
+}
+nav .destra .mainbuttons a {
+  text-decoration: none;
+  color: white;
 }
 nav .destra .mainbuttons:hover {
   background-color: #1D8999;
