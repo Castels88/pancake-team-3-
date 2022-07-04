@@ -40,6 +40,9 @@
   width: 430px;
   position: relative;
   background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .passive-income .centered-pi .top-pi .right-top-pi {
@@ -87,6 +90,12 @@
   align-items: center;
   justify-content: center;
   margin-right: 16px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn .button-top-pi:hover {
+  opacity: 0.65;
 }
 
 .passive-income .centered-pi .top-pi .right-top-pi .explore-learn .button-top-pi .a-button-top-pi {
@@ -101,6 +110,11 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.passive-income .centered-pi .top-pi .right-top-pi .explore-learn .a-top-pi:hover {
+  text-decoration: underline;
 }
 
 .passive-income .centered-pi .bottom-pi {

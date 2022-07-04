@@ -39,6 +39,9 @@ $lilac-writings: rgb(184, 173, 210);
                         width: 430px;
                         position: relative;
                         background-color: cadetblue;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
@@ -80,6 +83,11 @@ $lilac-writings: rgb(184, 173, 210);
                         align-items: center;
                         justify-content: center;
                         margin-right: 16px;
+                        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.65;
+                        }
                         .a-button-top-pi {
                             text-decoration: none;
                         }
@@ -92,6 +100,10 @@ $lilac-writings: rgb(184, 173, 210);
                         text-decoration: none;
                         display: flex;
                         align-items: center;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
