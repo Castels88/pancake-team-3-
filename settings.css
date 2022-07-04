@@ -68,9 +68,8 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio {
     display: flex;
-    flex-direction: column;
     overflow-y: scroll;
-    height: 100%;
+    flex-direction: column;
     padding: 10px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio {
