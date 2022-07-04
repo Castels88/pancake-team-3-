@@ -93,7 +93,7 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .font_settings2_elio {
     color: rgb(40, 13, 95);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .sub_container_elio .switch_elio {
@@ -136,7 +136,7 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .font_settings2_elio {
     color: rgb(40, 13, 95);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .font_settings2_elio svg {
@@ -160,7 +160,7 @@
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     -webkit-box-pack: center;
     letter-spacing: 0.03em;
     opacity: 1;
@@ -204,7 +204,7 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .font_settings2_elio {
     color: rgb(40, 13, 95);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .font_settings2_elio svg {
@@ -228,7 +228,7 @@
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     -webkit-box-pack: center;
     letter-spacing: 0.03em;
     opacity: 1;
@@ -247,7 +247,7 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .trebottoni_elio .percetuale_elio {
     color: rgb(31, 199, 212);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     margin-left: 2px;
     line-height: 1.5;
@@ -261,7 +261,7 @@
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .terzo_container_elio .font_settings2_elio {
     color: rgb(40, 13, 95);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .terzo_container_elio .font_settings2_elio svg {
@@ -284,7 +284,7 @@
     height: 32px;
     width: 60px;
     border: 1px solid rgb(215, 202, 236);
-    font-weight: 800;
+    font-weight: 600;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .terzo_container_elio .switch_elio {
     width: 56px;
