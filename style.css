@@ -63,7 +63,7 @@
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent {
-  text-align: center;
+  /* text-align: center; */
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -83,18 +83,20 @@
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent {
   padding: 0.625rem;
   margin: 0.625rem;
-  height: 18.75rem;
-  width: 30%;
-  border-radius: 3.125rem;
+  height: 21.875rem;
+  width: 32%;
+  border-radius: 1.5625rem;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-amount {
-  font-size: 24px;
-  color: #280d5f;
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-first-el {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button {
   margin: 10px 0;
+  text-align: center;
+  padding-top: 55px;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button {
@@ -105,7 +107,7 @@
   border: 1px solid #1FC7D4;
   border-radius: 15px;
   width: 90%;
-  padding: 15px;
+  padding: 10px;
   font-weight: bold;
   color: white;
   background-color: #1FC7D4;
@@ -127,8 +129,24 @@
   margin-right: 1.25rem;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
-  -webkit-box-shadow: -1px 10px 0px #feb237;
-          box-shadow: -1px 10px 0px #feb237;
+  -webkit-box-shadow: -1px 5px 0px #feb237;
+          box-shadow: -1px 5px 0px #feb237;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount {
+  font-size: 24px;
+  color: #280d5f;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount-info {
+  color: #280d5f;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-description {
+  font-weight: 300;
+  color: #280d5f;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent {
@@ -138,7 +156,23 @@
   margin-left: 1.25rem;
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
-  -webkit-box-shadow: -2px 10px 0px #7543d8;
-          box-shadow: -2px 10px 0px #7543d8;
+  -webkit-box-shadow: -2px 5px 0px #7543d8;
+          box-shadow: -2px 5px 0px #7543d8;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount {
+  font-size: 24px;
+  color: #fdbf23;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount-info {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-description {
+  font-weight: 300;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
