@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @use "moduloRoot";
 * {
@@ -10,7 +11,7 @@
 
 .first-container-Laurent {
   width: 100%;
-  height: 56.25rem;
+  height: 50rem;
   padding: 1.25rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#6fb6f0), to(#e8f1f5));
   background: linear-gradient(#6fb6f0, #e8f1f5);
@@ -41,6 +42,7 @@
 .first-container-Laurent .content-container-Laurent .main-title {
   font-size: 40px;
   color: #280D5F;
+  font-weight: 550;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -60,6 +62,7 @@
   grid-area: par;
   font-size: 16px;
   color: #7a6eaa;
+  font-weight: 300;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent {
@@ -113,7 +116,7 @@
   border-radius: 15px;
   width: 90%;
   padding: 10px;
-  font-weight: bold;
+  font-weight: 500;
   color: white;
   background-color: #1FC7D4;
   -webkit-transition: all 0.3s ease;
@@ -130,8 +133,8 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#feb237), to(#ffe668));
   background: linear-gradient(#feb237, #ffe668);
   margin-right: 0.9375rem;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
   -webkit-box-shadow: -1px 5px 0px #feb237;
           box-shadow: -1px 5px 0px #feb237;
 }
@@ -143,6 +146,10 @@
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount {
   font-size: 24px;
   color: #280d5f;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount h2 {
+  font-weight: 600;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount-info {
@@ -163,8 +170,8 @@
   margin-left: 0.9375rem;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  -webkit-box-shadow: -2px 5px 0px #7543d8;
-          box-shadow: -2px 5px 0px #7543d8;
+  -webkit-box-shadow: -2px 5px 0px hwb(260 26% 50%);
+          box-shadow: -2px 5px 0px hwb(260 26% 50%);
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-image {
@@ -176,6 +183,10 @@
   color: #fdbf23;
 }
 
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount h2 {
+  font-weight: 600;
+}
+
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount-info {
   color: white;
   font-weight: 600;
@@ -185,5 +196,182 @@
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-description {
   font-weight: 300;
   color: white;
+}
+
+.second-container-Laurent {
+  height: 50rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-container-Laurent .second-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3)[1fr];
+      grid-template-columns: repeat(1fr, 3);
+      grid-template-areas: 'title title image' 'desc desc image' 'buttons . image' 'data data data';
+}
+
+.second-container-Laurent .second-content-container .cake-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  margin-bottom: 20px;
+}
+
+.second-container-Laurent .second-content-container .cake-title h2 {
+  font-size: 40px;
+  color: #280D5F;
+  font-weight: 550;
+  line-height: 45px;
+}
+
+.second-container-Laurent .second-content-container .cake-title h2 .purple-cake {
+  color: #7645d9;
+}
+
+.second-container-Laurent .second-content-container .cake-description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: desc;
+  text-align: left;
+  font-size: 16px;
+  color: #7a6eaa;
+  font-weight: 300;
+}
+
+.second-container-Laurent .second-content-container .cake-buttons {
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 25px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: buttons;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.second-container-Laurent .second-content-container .cake-buttons button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 44%;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #1FC7D4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 1.5px 0px #072f32;
+          box-shadow: 0px 1.5px 0px #072f32;
+}
+
+.second-container-Laurent .second-content-container .cake-buttons button:hover {
+  opacity: .5;
+}
+
+.second-container-Laurent .second-content-container .cake-buttons a {
+  text-decoration: none;
+  color: #1FC7D4;
+  margin: 0 10px;
+}
+
+.second-container-Laurent .second-content-container .cake-buttons a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1FC7D4;
+          text-decoration-color: #1FC7D4;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table {
+  margin-top: 100px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: data;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'd1 d2 d3' 'd4 d5 d6';
+  row-gap: 25px;
+  -webkit-column-gap: 150px;
+          column-gap: 150px;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data {
+  padding: 10px;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data .data-title {
+  font-size: 16px;
+  color: #7a6eaa;
+  font-weight: 400;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data .data-num {
+  font-size: 24px;
+  color: #280D5F;
+  font-weight: 500;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data1  {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: d1;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: d2;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: d3;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: d4;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d5;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d6;
+}
+
+.second-container-Laurent .second-content-container .cake-data-table .data2,
+.second-container-Laurent .second-content-container .cake-data-table .data3,
+.second-container-Laurent .second-content-container .cake-data-table .data5,
+.second-container-Laurent .second-content-container .cake-data-table .data6 {
+  border-left: 2px solid rgba(122, 110, 170, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@
 
 .first-container-Laurent {
     width: 100%;
-    height: toRem(900);
+    height: toRem(800);
     padding: toRem(20) 0;
     background: linear-gradient(rgb(111,182,240), rgb(232,241,245));
     display: flex;
@@ -41,6 +41,7 @@
             "card card";
         .main-title {
             @include fontStyle(40px, #280D5F);
+            font-weight: 550;
             grid-area: title;
             text-align: center;
             .purple-win {
@@ -51,6 +52,7 @@
             text-align: center;
             grid-area: par;
             @include fontStyle(16px, rgb(122, 110, 170));
+            font-weight: 300;
         }
         .card-container-Laurent {
             /* text-align: center; */
@@ -85,7 +87,7 @@
                         border-radius:15px;
                         width:90%;
                         padding:10px;
-                        font-weight:bold;
+                        font-weight: 500;
                         color:white;
                         background-color: #1FC7D4;
                         transition: all 0.3s ease;
@@ -99,13 +101,16 @@
             .left-card-Laurent {
                 background: linear-gradient(rgb(254,178,55), rgb(255,230,104));
                 margin-right: toRem(15);
-                transform: rotate(-2deg);
+                transform: rotate(-3deg);
                 box-shadow: -1px 5px 0px rgb(254,178,55);
                 .card-first-el{
                     color: rgb(40, 13, 95);
                 }
                 .card-amount {
                     @include fontStyle(24px, rgb(40, 13, 95));
+                    h2 {
+                        font-weight: 600;
+                    }
                 }
                 .card-amount-info {
                     color:  rgb(40, 13, 95);
@@ -122,12 +127,15 @@
                 color: white;
                 margin-left: toRem(15);
                 transform: rotate(2deg);
-                box-shadow: -2px 5px 0px rgb(117,67,216);
+                box-shadow: -2px 5px 0px hwb(260 26% 50%);
                 .card-image {
                     fill: white;
                 }
                 .card-amount {
                     @include fontStyle(24px, rgb(253,191,35));
+                    h2 {
+                        font-weight: 600;
+                    }
                 }
                 .card-amount-info {
                     color:  white;
@@ -141,6 +149,127 @@
             }
         } 
     }
+}
+
+.second-container-Laurent {
+    height: toRem(800);
+    width: 100%;
+    padding: toRem(20) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .second-content-container {
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
+        grid-template-areas: 
+            'title title image'
+            'desc desc image'
+            'buttons . image'
+            'data data data';
+      .cake-title {
+        grid-area: title;
+        margin-bottom: 20px;
+        h2 {
+            @include fontStyle(40px, #280D5F);
+            font-weight: 550;
+            line-height: 45px;
+            .purple-cake {
+                color: rgb(118, 69, 217);
+            }
+        }
+        
+    }
+    .cake-description {
+        grid-area: desc;
+        text-align: left;
+        @include fontStyle(16px, rgb(122, 110, 170));
+        font-weight: 300;
+    }
+    .cake-buttons {
+        margin: 10px 0;
+        text-align: center;
+        padding-top: 25px;
+        grid-area: buttons;
+        display: flex;
+        align-items: baseline;
+        button {
+            border: none;
+            background: transparent;
+            @include fontStyle(16px, white);
+            border:1px solid #1FC7D4;
+            border-radius:15px;
+            width: 44%;
+            padding:10px;
+            font-weight:bold;
+            color:white;
+            background-color: #1FC7D4;
+            transition: all 0.3s ease;
+            box-shadow: 0px 1.5px 0px #072f32;
+            &:hover {
+            opacity: .5;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #1FC7D4;
+            margin: 0 10px;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: #1FC7D4;
+            }
+        }
+    }  
+    .cake-data-table {
+        margin-top: 100px;
+        grid-area: data;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'd1 d2 d3'
+            'd4 d5 d6';
+        row-gap: 25px;
+        column-gap: 150px;
+        .data {
+            padding: 10px;
+            .data-title {
+                @include fontStyle(16px, rgb(122, 110, 170));
+                font-weight: 400;
+            }
+            .data-num {
+                @include fontStyle(24px, #280D5F);
+                font-weight: 500;
+            }
+        }
+
+        .data1 {
+            grid-area: d1;
+        }
+        .data-2 {
+            grid-area: d2;
+        }
+        .data-3 {
+            grid-area: d3;
+        }
+        .data-4 {
+            grid-area: d4;
+        }
+        .data-5 {
+            grid-area: d5;
+        }
+        .data-6 {
+            grid-area: d6;
+        }
+
+        .data2,
+        .data3,
+        .data5,
+        .data6 {
+            border-left: 2px solid rgba(122, 110, 170, .4);
+        }
+    }
+
+    }
+    
 }
 
 //Fine sezione SCSS Laurent
