@@ -21,7 +21,7 @@
 
 .first-container-Laurent {
     width: 100%;
-    height: 100%;
+    height: toRem(900);
     padding: toRem(20) 0;
     background: linear-gradient(rgb(111,182,240), rgb(232,241,245));
     display: flex;
@@ -60,11 +60,15 @@
             justify-content: center;
             width: 100%;
             .card-Laurent {
-                padding: toRem(10);
+                padding: toRem(15);
                 margin: toRem(10);
                 height: toRem(350);
-                width: 32%;
+                width: 33%;
                 border-radius: toRem(25);
+                .card-image {
+                    text-align: end;
+                    padding: 10px;
+                }
                 .card-first-el {
                     font-size: 15px;
                     font-weight: 600;
@@ -72,7 +76,7 @@
                 .card-button {
                     margin: 10px 0;
                     text-align: center;
-                    padding-top: 55px;
+                    padding-top: 25px;
                     button {
                         border: none;
                         background: transparent;
@@ -94,9 +98,12 @@
             }
             .left-card-Laurent {
                 background: linear-gradient(rgb(254,178,55), rgb(255,230,104));
-                margin-right: toRem(20);
-                transform: rotate(-3deg);
+                margin-right: toRem(15);
+                transform: rotate(-2deg);
                 box-shadow: -1px 5px 0px rgb(254,178,55);
+                .card-first-el{
+                    color: rgb(40, 13, 95);
+                }
                 .card-amount {
                     @include fontStyle(24px, rgb(40, 13, 95));
                 }
@@ -113,9 +120,12 @@
             .right-card-Laurent {
                 background: linear-gradient(rgb(117,67,216), rgb(81,33,177));
                 color: white;
-                margin-left: toRem(20);
-                transform: rotate(3deg);
+                margin-left: toRem(15);
+                transform: rotate(2deg);
                 box-shadow: -2px 5px 0px rgb(117,67,216);
+                .card-image {
+                    fill: white;
+                }
                 .card-amount {
                     @include fontStyle(24px, rgb(253,191,35));
                 }

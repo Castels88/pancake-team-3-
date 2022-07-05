@@ -10,7 +10,7 @@
 
 .first-container-Laurent {
   width: 100%;
-  height: 100%;
+  height: 56.25rem;
   padding: 1.25rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#6fb6f0), to(#e8f1f5));
   background: linear-gradient(#6fb6f0, #e8f1f5);
@@ -81,11 +81,16 @@
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent {
-  padding: 0.625rem;
+  padding: 0.9375rem;
   margin: 0.625rem;
   height: 21.875rem;
-  width: 32%;
+  width: 33%;
   border-radius: 1.5625rem;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-image {
+  text-align: end;
+  padding: 10px;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-first-el {
@@ -96,7 +101,7 @@
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button {
   margin: 10px 0;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 25px;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button {
@@ -124,11 +129,15 @@
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent {
   background: -webkit-gradient(linear, left top, left bottom, from(#feb237), to(#ffe668));
   background: linear-gradient(#feb237, #ffe668);
-  margin-right: 1.25rem;
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
+  margin-right: 0.9375rem;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
   -webkit-box-shadow: -1px 5px 0px #feb237;
           box-shadow: -1px 5px 0px #feb237;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-first-el {
+  color: #280d5f;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount {
@@ -151,11 +160,15 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#7543d8), to(#5121b1));
   background: linear-gradient(#7543d8, #5121b1);
   color: white;
-  margin-left: 1.25rem;
-  -webkit-transform: rotate(3deg);
-          transform: rotate(3deg);
+  margin-left: 0.9375rem;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
   -webkit-box-shadow: -2px 5px 0px #7543d8;
           box-shadow: -2px 5px 0px #7543d8;
+}
+
+.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-image {
+  fill: white;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount {
