@@ -118,9 +118,7 @@
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button:hover {
-  background-color: #1D8999;
-  border: 1px solid #1D8999;
-  color: #AFADB4;
+  opacity: .5;
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent {
