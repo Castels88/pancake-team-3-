@@ -48,7 +48,7 @@
     border: 1px solid rgb(231, 227, 235);
     border-radius: 32px;
     width: 420px;
-    height: calc(var(--vh, 1vh) * 85);
+    height: calc(var(--vh, 1vh) * 95);
     z-index: 100;
   }
   .appear_elio .settings_menu_elio .settings_top_elio {
@@ -75,7 +75,7 @@
     padding: 10px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio {
-    height: 200px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,7 +152,7 @@
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .primo_conteiner_elio .trebottoni_elio .btn_settings {
     display: flex;
     align-items: center;
-    width: 140px;
+    width: 150px;
     height: 35px;
     border: 0px;
     border-radius: 16px;
@@ -182,7 +182,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-top: 1px solid rgb(231, 227, 235);
-    height: 150px;
+    height: 140px;
     margin-top: 10px;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .font_settings1_elio {
@@ -200,7 +200,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 90%;
   }
   .appear_elio .settings_menu_elio .settings_scroolbar_elio .secondo_container_elio .liquidity_swap_elio .font_settings2_elio {
     color: rgb(40, 13, 95);

@@ -48,7 +48,7 @@
     border: 1px solid rgb(231, 227, 235);
     border-radius: 32px;
     width: 400px;
-    height: calc(var(--vh, 1vh) * 55);
+    height: calc(var(--vh, 1vh) * 60);
     z-index: 100;
   }
   .appear_elio .settings_menu_elio .settings_top_elio {
@@ -73,7 +73,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 60%;
+    height: 50%;
     width: 100%;
 }
 .container1{
@@ -113,6 +113,7 @@
 .testo_elio{
     color: #7A6EAA;
     font-weight:bold;
+    margin-top: 20px;
 }
 .btn_connect_elio{
     -webkit-box-align: center;
