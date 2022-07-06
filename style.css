@@ -300,6 +300,45 @@
           text-decoration-color: #1FC7D4;
 }
 
+.second-container-Laurent .second-content-container .cake-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: image;
+  position: relative;
+}
+
+.second-container-Laurent .second-content-container .cake-image picture .bottom-right-cake {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  height: 350px;
+  width: 400px;
+}
+
+.second-container-Laurent .second-content-container .cake-image picture .top-right-cake {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 350px;
+  width: 400px;
+}
+
+.second-container-Laurent .second-content-container .cake-image picture .top-left-cake {
+  position: absolute;
+  top: 0;
+  left: -260px;
+  height: 350px;
+  width: 400px;
+}
+
+.second-container-Laurent .second-content-container .cake-image picture .coin-cake {
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  right: 0;
+}
+
 .second-container-Laurent .second-content-container .cake-data-table {
   margin-top: 100px;
   -ms-grid-row: 4;

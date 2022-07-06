@@ -219,6 +219,40 @@
             }
         }
     }  
+    .cake-image {
+        grid-area: image;
+        position: relative;
+        picture { 
+
+            .bottom-right-cake {
+                position: absolute;
+                bottom: -80px;
+                right: 0;
+                height: 350px;
+                width: 400px;
+            }
+            .top-right-cake {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 350px;
+                width: 400px;
+            }
+            .top-left-cake {
+                position: absolute;
+                top: 0;
+                left: -260px;
+                height: 350px;
+                width: 400px;
+            }
+            .coin-cake {
+                position: absolute;
+                height: 350px;
+                width: 400px;
+                right: 0;
+            }
+        }
+    }
     .cake-data-table {
         margin-top: 100px;
         grid-area: data;
