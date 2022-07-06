@@ -170,8 +170,8 @@
   margin-left: 0.9375rem;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  -webkit-box-shadow: -2px 5px 0px hwb(260 26% 50%);
-          box-shadow: -2px 5px 0px hwb(260 26% 50%);
+  -webkit-box-shadow: 0px 5px 0px hwb(260 26% 50%);
+          box-shadow: 0px 5px 0px hwb(260 26% 50%);
 }
 
 .first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-image {
