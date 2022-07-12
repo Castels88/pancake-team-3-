@@ -171,6 +171,7 @@ nav .destra .language .dropdown_content .element:hover {
 }
 nav .destra .settings_elio {
   margin-top: 2px;
+  padding: 10px;
   background-color: white;
   border: 1px solid white;
   cursor: pointer;
@@ -205,6 +206,4 @@ nav .destra .mainbuttons:hover {
 
 * {
   font-family: "Kanit";
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
