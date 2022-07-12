@@ -44,7 +44,7 @@
     z-index: 20;
     will-change: opacity;
   }
-  .appear_elio .settings_menu_elio {
+  .appear_elio .settings_menu_elio2 {
     overflow: hidden;
     background: rgb(255, 255, 255);
     box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
@@ -54,7 +54,7 @@
     height: calc(var(--vh, 1vh) * 60);
     z-index: 100;
   }
-  .appear_elio .settings_menu_elio .settings_top_elio {
+  .appear_elio .settings_menu_elio2 .settings_top_elio {
     height: 80px;
     -webkit-box-align: center;
     align-items: center;
@@ -68,7 +68,7 @@
     color: rgb(40, 13, 95);
 }  
 
-.appear_elio .settings_menu_elio .settings_top_elio a{
+.appear_elio .settings_menu_elio2 .settings_top_elio a{
     text-decoration: none;
     color: rgb(31, 199, 212);
 }
@@ -105,7 +105,7 @@
     line-height: 1.5;
     font-size: 14px;
 }
-.appear_elio .settings_menu_elio .settings_bot_elio{
+.appear_elio .settings_menu_elio2 .settings_bot_elio{
     width: 100%;
     height: 130px;
     display: flex;

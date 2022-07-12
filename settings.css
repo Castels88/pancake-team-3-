@@ -51,7 +51,7 @@
     border: 1px solid rgb(231, 227, 235);
     border-radius: 32px;
     width: 420px;
-    height: calc(var(--vh, 1vh) * 95);
+    height: calc(var(--vh, 1vh) * 75);
     z-index: 100;
   }
   .appear_elio .settings_menu_elio .settings_top_elio {
