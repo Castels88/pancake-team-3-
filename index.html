@@ -163,10 +163,10 @@
     <div class="big_container_elio">
         <div class="appear_elio">
             <div class="presentation_elio"></div>
-            <div class="settings_menu_elio">
+            <div class="settings_container">
                 <div class="settings_top_elio">
                     Settings
-                        <svg class="exit" viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 etGTJB"><path fill="currentColor" d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z"></path></svg>
+                        <svg class="exit"  viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 etGTJB"><path fill="currentColor" d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z"></path></svg>
                 </div>
                 <div class="settings_scroolbar_elio">
                         <div class="primo_conteiner_elio">
@@ -253,7 +253,7 @@
             <div class="settings_menu_elio2">
                 <div class="settings_top_elio">
                     Connect Wallet
-                        <svg class="exit2" viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 etGTJB"><path fill="currentColor" d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z"></path></svg>
+                        <svg class="exit2" ; viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 etGTJB"><path fill="currentColor" d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z"></path></svg>
                 </div>
                 <div class="grid_container_elio">
                     <div class="container1">
@@ -295,11 +295,10 @@
         const container2 = document.querySelector(".big_container2_elio")
         const exit = document.querySelector(".exit")
         const exit2 = document.querySelector(".exit2")
-
-
-
+        const presentation = document.querySelector(".presentation_elio")
         settings.onclick = function(){
             container1.style.display = "block";
+            // presentation.style.animation = "3s ease-in-out 0s "
         }
         connectWallet.onclick = function() {
             container2.style.display = "block";
@@ -311,9 +310,6 @@
         exit2.onclick = function() {
             container2.style.display = "none";
         }
-
-
-        
     </script>
 </body>
 
