@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container-MySect {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(118, 69, 217);
+
+    & .text {
+        z-index: 1;
+        position: relative;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        overflow: hidden;
+        vertical-align: middle;
+
+        & .head {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        & .p-1 {
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        & .p-2 {
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+
+        & .link-a {
+            color: rgb(31, 199, 212);
+            font-weight: 600;
+            line-height: 1.5;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        & .link-a:hover {
+            text-decoration: underline;
+        }
+    }
+}
