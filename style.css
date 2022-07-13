@@ -1,97 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Kanit";
-}
-
-body {
-  height: 100vh;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  line-height: 1;
 }
 
-nav {
+.moon_federico {
+  height: 50rem;
+  width: 100%;
+  padding: 0px 100px;
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+}
+.moon_federico .top_federico {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.moon_federico .top_federico .countdown_federico {
+  background-color: blue;
+  border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(118, 69, 217);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  height: 56px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(231, 227, 235);
-  padding-left: 16px;
-  padding-right: 16px;
+  position: relative;
+  z-index: 1;
 }
-
-.sinistra {
-  width: 60%;
-  height: 56px;
+.moon_federico .top_federico .countdown_federico h2 {
+  color: white;
+}
+.moon_federico .top_federico .countdown_federico .counter_federico {
+  background-color: #280D5F;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
+.moon_federico .top_federico .countdown_federico .counter_federico .timer_federico {
+  height: 100%;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.bottoni {
-  display: flex;
-  width: 300px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-
-.navmenubuttons {
-  text-align:start;
-  padding:8px;
-  border:1px solid rgb(255, 255, 255);
-  background-color:rgb(255, 255, 255);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  color: #7A6EAA;
-  font-weight:bold;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  list-style-type: none;
+.moon_federico .top_federico .countdown_federico .counter_federico .timer_federico p {
+  color: rgb(255, 178, 55);
+  font-size: 40px;
+  font-weight: 600;
 }
-
-.navmenubuttons li a {
-  text-decoration: none;
-  color: #7A6EAA;
+.moon_federico .top_federico .countdown_federico .counter_federico .timer_federico span {
+  color: rgb(255, 178, 55);
+  font-size: 20px;
+  font-weight: bold;
 }
-
-.navmenubuttons:hover{
-    border:1px solid rgb(216, 212, 212);
-    background-color: rgb(216, 212, 212);
-    border-radius: 10px;
-}
-.destra{
-  width: 40%;
-  height: 36px;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-evenly; 
-  align-items: center;
-}
-.mainbuttons {
-  display: flex;
-  align-items: center;
-  border:1px solid #1FC7D4;
-  border-radius:20px;
-  width:140px;
-  height: 35px;
-  padding:15px;
-  font-weight:bold;
-  font-size:16px;
-  color:white;
+.moon_federico .top_federico .countdown_federico #mainbutton_federico {
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
   background-color: #1FC7D4;
   transition: all 0.3s ease;
 }
-  
-.mainbuttons:hover {
+.moon_federico .top_federico .countdown_federico #mainbutton_federico:hover {
   background-color: #1D8999;
-  border:1px solid #1D8999;
-  border-radius: 20px;
-  color:white;
-  }
-  .money{
-    color: rgb(122, 110, 170);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
+  border: 1px solid #1D8999;
+  color: #AFADB4;
+}
+.moon_federico .top_federico img {
+  position: absolute;
+  height: auto;
+  width: 350px;
+  margin: auto;
+  right: 200px;
+  z-index: 2;
+}
+.moon_federico .bottom_federico {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.moon_federico .bottom_federico .bottomleft_federico {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.moon_federico .bottom_federico .bottomleft_federico #maintext_federico {
+  font-size: 65px;
+  font-weight: bolder;
+  color: rgb(118, 69, 217);
+}
+.moon_federico .bottom_federico .bottomleft_federico #secondarytext_federico {
+  font-size: 18px;
+  color: #280D5F;
+  font-weight: bold;
+}
+.moon_federico .bottom_federico .bottomleft_federico .bottoni_federico {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  gap: 10px;
+}
+.moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #mainbutton_federico {
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: #1FC7D4;
+  transition: all 0.3s ease;
+}
+.moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #mainbutton_federico:hover {
+  background-color: #1D8999;
+  border: 1px solid #1D8999;
+  color: #AFADB4;
+}
+.moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #secondarybutton_federico {
+  border: 2px solid #1FC7D4;
+  border-radius: 15px;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1FC7D4;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #secondarybutton_federico:hover {
+  color: #1D8999;
+  border: 1px solid #1D8999;
+}
+.moon_federico .bottom_federico .bottomright_federico {
+  width: 50%;
+}
+.moon_federico .bottom_federico .bottomright_federico img {
+  max-width: 80%;
+}
+
+.usedby_federico {
+  height: 50rem;
+  width: 100%;
+  padding-top: 100px;
+  background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+}
+.usedby_federico .usedtop_federico {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.usedby_federico .usedtop_federico img {
+  padding-bottom: 20px;
+}
+.usedby_federico .usedtop_federico h2 {
+  font-size: 40px;
+  color: #280D5F;
+  padding-bottom: 20px;
+}
+.usedby_federico .usedtop_federico p {
+  padding-bottom: 20px;
+}
+.usedby_federico .usedtop_federico span {
+  font-weight: bold;
+}
+.usedby_federico .usedbottom_federico {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.usedby_federico .usedbottom_federico .card_federico {
+  width: 280px;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  border-bottom: 8px solid lightgray;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_top,
+.usedby_federico .usedbottom_federico .card_federico .card_bottom {
+  height: 50%;
+  width: 100%;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_top {
+  position: relative;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_top img {
+  position: absolute;
+  right: 0;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_bottom h2 {
+  font-size: 40px;
+  color: #280D5F;
+}
+.usedby_federico .usedbottom_federico .card_federico .card_bottom h2 #diff1 {
+  color: rgb(118, 69, 217);
+}
+.usedby_federico .usedbottom_federico .card_federico .card_bottom h2 #diff2 {
+  color: rgb(31, 199, 212);
+}
+.usedby_federico .usedbottom_federico .card_federico .card_bottom h2 #diff3 {
+  color: rgb(237, 75, 158);
+}/*# sourceMappingURL=style.css.map */

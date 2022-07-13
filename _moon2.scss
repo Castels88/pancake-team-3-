@@ -1,0 +1,164 @@
+@use 'assets/modules/moduloRoot';
+// @use 'assets/modules/buttons';
+
+@mixin mainbuttons {
+    border:1px solid #1FC7D4;
+    border-radius:15px;
+    width:150px;
+    height: 50px;
+    font-weight: 600;
+    font-size:16px;
+    color:white;
+    background-color: #1FC7D4;
+    transition: all 0.3s ease;
+        &:hover {
+        background-color: #1D8999;
+        border:1px solid #1D8999;
+        color:#AFADB4;
+        }
+   }
+
+   @mixin secondarybuttons {
+    border: 2px solid #1FC7D4;
+    border-radius:15px;
+    width:120px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    color:#1FC7D4;
+    background-color: transparent;
+    transition: all 0.3s ease;
+        &:hover {
+        color: #1D8999;
+        border: 1px solid #1D8999;
+        }
+   }
+
+// 
+
+
+.moon_federico {
+    height: 50rem;
+    width: 100%;
+    padding: 0px 100px;
+    background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+
+    .top_federico {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+
+        .countdown_federico {
+            background-color: blue;
+            border-radius: 30px;
+            width: 100%;
+            height: 200px;
+            background-color: rgb(118, 69, 217);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+
+
+            h2 {
+                color: white;
+            }
+            .counter_federico {
+                background-color: #280D5F;
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+
+                .timer_federico {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: rgb(255, 178, 55);;
+                        font-size: 40px;
+                        font-weight: 600;
+                    }
+                    span {
+                        color: rgb(255, 178, 55);;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            #mainbutton_federico {
+                @include mainbuttons;
+            }
+    }
+        img {
+            position: absolute;
+            // right: 0;
+            // top: 0px;
+            height: auto;
+            width: 350px;
+            margin: auto;
+            right: 200px;
+            z-index: 2;
+        }
+}
+
+.bottom_federico {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    .bottomleft_federico {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        #maintext_federico {
+            font-size: 65px;
+            font-weight: bolder;
+            color: rgb(118, 69, 217);
+        }
+        #secondarytext_federico {
+            font-size: 18px;
+            color: #280D5F;
+            font-weight: bold;
+        }
+        .bottoni_federico {
+            display: flex;
+            width: 100%;
+            justify-content: left;
+            gap: 10px;
+
+                #mainbutton_federico {
+                    @include mainbuttons;
+                }
+                #secondarybutton_federico {
+                    @include secondarybuttons;
+                }
+        }
+    }
+
+    .bottomright_federico {
+        width: 50%;
+        // height: 100%;
+
+        img {
+            max-width: 80%;
+            // max-height: 100%;
+        }
+    }
+}
+}
