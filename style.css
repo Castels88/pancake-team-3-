@@ -143,6 +143,7 @@
 .container-MySect .box-img-animated-2 {
   position: relative;
   max-height: 256px;
+  z-index: 999;
 }
 .container-MySect .box-img-animated-2 .img-down-2 {
   height: 100%;
