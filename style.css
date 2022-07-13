@@ -160,7 +160,6 @@
   position: absolute;
   top: -79px;
   left: 579px;
-  z-index: 999;
 }
 .container-MySect .box-img-animated-2 .img-middle-2 .second-img-2 {
   width: 250px;
@@ -169,7 +168,7 @@
 .container-MySect .box-img-animated-2 .img-up-2 {
   height: 100%;
   position: absolute;
-  top: -81px;
+  top: -63px;
   left: 598px;
 }
 .container-MySect .box-img-animated-2 .img-up-2 .third-img-2 {
