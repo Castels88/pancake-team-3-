@@ -16,10 +16,14 @@
   background-color: #27262c;
   justify-content: center;
 }
+.Container-Footer-Firstbar {
+  display: none;
+}
 .Container-Footer-Sub {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 15.8rem;
   margin-top: 3rem;
 }
 .Container-Footer-Sub-Info-Ul-Titles {
@@ -29,6 +33,7 @@
   font-weight: bold;
 }
 .Container-Footer-Sub-Info-Ul-Li {
+  flex-wrap: wrap;
   list-style: none;
   margin-top: 10px;
 }
@@ -60,12 +65,14 @@
   margin-bottom: 1.7rem;
   align-self: center;
   width: 65%;
+  height: 48px;
   border-bottom: #342f3b solid 0.5px;
 }
 .Container-Footer-Icons-All {
   margin-bottom: 25px;
 }
 .Container-Footer-Latestbar {
+  flex-wrap: wrap;
   width: 100%;
   height: 56px;
   display: flex;
@@ -76,6 +83,7 @@
   gap: 55rem;
 }
 .Container-Footer-Latestbar-Left {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
@@ -170,6 +178,7 @@
   border-radius: 10px;
 }
 .Container-Footer-Latestbar-Right {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
@@ -213,4 +222,55 @@
 .Container-Footer-Latestbar-Right .mainbuttons-Footer .arrow {
   margin-left: 5px;
   fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  .Container-Footer {
+    justify-content: start;
+  }
+  .Container-Footer-Firstbar {
+    display: inline;
+  }
+  .Container-Footer-Firstbar-PancakeSwapLogo {
+    margin: 30px;
+  }
+  .Container-Footer-Firstbar-Topbuttons {
+    border-top: #342f3b solid 0.5px;
+    border-bottom: #342f3b solid 0.5px;
+    margin-left: 1.5rem;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .Container-Footer-Firstbar-Topbuttons #firstbar-right {
+    margin-bottom: 2rem;
+  }
+  .Container-Footer-Firstbar-Topbuttons #firstbar-right #firstbar-money {
+    margin-right: 7.4rem;
+  }
+  .Container-Footer-Sub {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 1rem;
+    gap: 4rem;
+  }
+  .Container-Footer-Sub-PancakeSwapLogo {
+    display: none;
+  }
+  .Container-Footer-Icons {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+    width: 85%;
+    height: 45px;
+    margin-left: 30px;
+    border-bottom: #342f3b solid 0.5px;
+  }
+  .Container-Footer-Icons-All {
+    margin-bottom: 25px;
+  }
+  .Container-Footer-Latestbar {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
