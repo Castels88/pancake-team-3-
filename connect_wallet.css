@@ -142,9 +142,14 @@
   width: 80%;
 }
 
-.btn_connect_elio a {
+.settings_bot_elio a{
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
 }
 
 .btn_connect_elio:hover{
