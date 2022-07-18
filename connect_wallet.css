@@ -141,7 +141,17 @@
   color: rgb(255, 255, 255);
   width: 80%;
 }
+
+.btn_connect_elio a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn_connect_elio:hover{
   opacity: 0.5;
   transition: all 1s;
+}
+
+.exit2:hover {
+  cursor: pointer;
 }
