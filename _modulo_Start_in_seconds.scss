@@ -84,7 +84,7 @@
             text-decoration: underline;
         }
 
-        & .btn-connectWallet {
+        & .mainbuttons {
             position: relative;
             -webkit-box-align: center;
             align-items: center;
@@ -107,16 +107,11 @@
             background-color: rgb(31, 199, 212);
             color: white;
             margin-top: 24px;
-            
-            & a {
-                text-decoration: none;
-                color: white;
-            }
 
         }
     }
 
-     .container-btn:hover {
+     .mainbuttons:hover {
         opacity: 50%;
         transition: 0.2s ease-in-out;
     }

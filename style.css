@@ -73,7 +73,7 @@
 .container-MySect .text .link-a:hover {
   text-decoration: underline;
 }
-.container-MySect .text .btn-connectWallet {
+.container-MySect .text .mainbuttons {
   position: relative;
   -webkit-box-align: center;
   align-items: center;
@@ -97,11 +97,7 @@
   color: white;
   margin-top: 24px;
 }
-.container-MySect .text .btn-connectWallet a {
-  text-decoration: none;
-  color: white;
-}
-.container-MySect .container-btn:hover {
+.container-MySect .mainbuttons:hover {
   opacity: 50%;
   transition: 0.2s ease-in-out;
 }
