@@ -45,13 +45,14 @@
     will-change: opacity;
   }
   .appear_elio .settings_container {
-    overflow: hidden;
+    overflow-y: scroll;
     background: rgb(255, 255, 255);
     box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
     border: 1px solid rgb(231, 227, 235);
     border-radius: 32px;
-    width: 420px;
-    height: calc(var(--vh, 1vh) * 95);
+    width: 430px;
+    /* height: calc(var(--vh, 1vh) * 95); */
+    max-height: 650px;
     z-index: 100;
   }
   .appear_elio .settings_container .settings_top_elio {
