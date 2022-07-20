@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@keyframes img-moon {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-5px, -5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
 * {
     font-family: 'Kanit';
     margin: 0;
@@ -222,9 +234,9 @@
     .cake-image {
         grid-area: image;
         position: relative;
-        picture { 
-
+        picture {
             .bottom-right-cake {
+                animation: 3s ease-in-out 0s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 bottom: -80px;
                 right: 0;
@@ -232,6 +244,7 @@
                 width: 400px;
             }
             .top-right-cake {
+                animation: 3s ease-in-out 0.5s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -239,6 +252,7 @@
                 width: 400px;
             }
             .top-left-cake {
+                animation: 3s ease-in-out 1s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 top: 0;
                 left: -260px;
@@ -246,6 +260,7 @@
                 width: 400px;
             }
             .coin-cake {
+                animation: 3s ease-in-out 1.2s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 height: 350px;
                 width: 400px;
