@@ -38,7 +38,7 @@
           box-sizing: border-box;
 }
 
-.first-container-Laurent {
+.winMillion-container {
   width: 100%;
   height: 50rem;
   padding: 1.25rem 0;
@@ -55,7 +55,7 @@
           align-items: center;
 }
 
-.first-container-Laurent .content-container-Laurent {
+.winMillion-container .winMillion-content {
   background-color: #d0e5fa;
   padding: 1.25rem 0;
   height: 34.375rem;
@@ -68,7 +68,7 @@
       grid-template-areas: "title title" "par par" "card card";
 }
 
-.first-container-Laurent .content-container-Laurent .main-title {
+.winMillion-container .winMillion-content .main-title {
   font-size: 40px;
   color: #280D5F;
   font-weight: 550;
@@ -79,11 +79,11 @@
   text-align: center;
 }
 
-.first-container-Laurent .content-container-Laurent .main-title .purple-win {
+.winMillion-container .winMillion-content .main-title .purple-win {
   color: #7645d9;
 }
 
-.first-container-Laurent .content-container-Laurent .par-container {
+.winMillion-container .winMillion-content .par-container {
   text-align: center;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -94,7 +94,7 @@
   font-weight: 300;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent {
+.winMillion-container .winMillion-content .card-container {
   /* text-align: center; */
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -112,7 +112,7 @@
   width: 100%;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent {
+.winMillion-container .winMillion-content .card-container .card {
   padding: 0.9375rem;
   margin: 0.625rem;
   height: 21.875rem;
@@ -120,23 +120,23 @@
   border-radius: 1.5625rem;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-image {
+.winMillion-container .winMillion-content .card-container .card .card-image {
   text-align: end;
   padding: 10px;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-first-el {
+.winMillion-container .winMillion-content .card-container .card .card-first-el {
   font-size: 15px;
   font-weight: 600;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button {
+.winMillion-container .winMillion-content .card-container .card .card-button {
   margin: 10px 0;
   text-align: center;
   padding-top: 25px;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button {
+.winMillion-container .winMillion-content .card-container .card .card-button button {
   border: none;
   background: transparent;
   font-size: 16px;
@@ -154,11 +154,11 @@
           box-shadow: 0px 1.5px 3px black;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .card-Laurent .card-button button:hover {
+.winMillion-container .winMillion-content .card-container .card .card-button button:hover {
   opacity: .5;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent {
+.winMillion-container .winMillion-content .card-container .left-card {
   background: -webkit-gradient(linear, left top, left bottom, from(#feb237), to(#ffe668));
   background: linear-gradient(#feb237, #ffe668);
   margin-right: 0.9375rem;
@@ -168,31 +168,31 @@
           box-shadow: -1px 5px 0px #feb237;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-first-el {
+.winMillion-container .winMillion-content .card-container .left-card .card-first-el {
   color: #280d5f;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount {
+.winMillion-container .winMillion-content .card-container .left-card .card-amount {
   font-size: 24px;
   color: #280d5f;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount h2 {
+.winMillion-container .winMillion-content .card-container .left-card .card-amount h2 {
   font-weight: 600;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-amount-info {
+.winMillion-container .winMillion-content .card-container .left-card .card-amount-info {
   color: #280d5f;
   font-weight: 600;
   padding-bottom: 20px;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .left-card-Laurent .card-description {
+.winMillion-container .winMillion-content .card-container .left-card .card-description {
   font-weight: 300;
   color: #280d5f;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent {
+.winMillion-container .winMillion-content .card-container .right-card {
   background: -webkit-gradient(linear, left top, left bottom, from(#7543d8), to(#5121b1));
   background: linear-gradient(#7543d8, #5121b1);
   color: white;
@@ -203,31 +203,31 @@
           box-shadow: 0px 5px 0px hwb(260 26% 50%);
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-image {
+.winMillion-container .winMillion-content .card-container .right-card .card-image {
   fill: white;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount {
+.winMillion-container .winMillion-content .card-container .right-card .card-amount {
   font-size: 24px;
   color: #fdbf23;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount h2 {
+.winMillion-container .winMillion-content .card-container .right-card .card-amount h2 {
   font-weight: 600;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-amount-info {
+.winMillion-container .winMillion-content .card-container .right-card .card-amount-info {
   color: white;
   font-weight: 600;
   padding-bottom: 20px;
 }
 
-.first-container-Laurent .content-container-Laurent .card-container-Laurent .right-card-Laurent .card-description {
+.winMillion-container .winMillion-content .card-container .right-card .card-description {
   font-weight: 300;
   color: white;
 }
 
-.second-container-Laurent {
+.cake-container {
   height: 50rem;
   width: 100%;
   padding: 1.25rem 0;
@@ -242,7 +242,7 @@
           align-items: center;
 }
 
-.second-container-Laurent .second-content-container {
+.cake-container .cake-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (3)[1fr];
@@ -250,7 +250,7 @@
       grid-template-areas: 'title title image' 'desc desc image' 'buttons . image' 'data data data';
 }
 
-.second-container-Laurent .second-content-container .cake-title {
+.cake-container .cake-content .cake-title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -258,18 +258,18 @@
   margin-bottom: 20px;
 }
 
-.second-container-Laurent .second-content-container .cake-title h2 {
+.cake-container .cake-content .cake-title h2 {
   font-size: 40px;
   color: #280D5F;
   font-weight: 550;
   line-height: 45px;
 }
 
-.second-container-Laurent .second-content-container .cake-title h2 .purple-cake {
+.cake-container .cake-content .cake-title h2 .purple-cake {
   color: #7645d9;
 }
 
-.second-container-Laurent .second-content-container .cake-description {
+.cake-container .cake-content .cake-description {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -280,7 +280,7 @@
   font-weight: 300;
 }
 
-.second-container-Laurent .second-content-container .cake-buttons {
+.cake-container .cake-content .cake-buttons {
   margin: 10px 0;
   text-align: center;
   padding-top: 25px;
@@ -295,7 +295,7 @@
           align-items: baseline;
 }
 
-.second-container-Laurent .second-content-container .cake-buttons button {
+.cake-container .cake-content .cake-buttons button {
   border: none;
   background: transparent;
   font-size: 16px;
@@ -313,23 +313,23 @@
           box-shadow: 0px 1.5px 0px #072f32;
 }
 
-.second-container-Laurent .second-content-container .cake-buttons button:hover {
+.cake-container .cake-content .cake-buttons button:hover {
   opacity: .5;
 }
 
-.second-container-Laurent .second-content-container .cake-buttons a {
+.cake-container .cake-content .cake-buttons a {
   text-decoration: none;
   color: #1FC7D4;
   margin: 0 10px;
 }
 
-.second-container-Laurent .second-content-container .cake-buttons a:hover {
+.cake-container .cake-content .cake-buttons a:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #1FC7D4;
           text-decoration-color: #1FC7D4;
 }
 
-.second-container-Laurent .second-content-container .cake-image {
+.cake-container .cake-content .cake-image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
@@ -337,7 +337,7 @@
   position: relative;
 }
 
-.second-container-Laurent .second-content-container .cake-image picture .bottom-right-cake {
+.cake-container .cake-content .cake-image picture .bottom-right-cake {
   -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
           animation: 3s ease-in-out 0s infinite normal none running img-moon;
   position: absolute;
@@ -347,9 +347,9 @@
   width: 400px;
 }
 
-.second-container-Laurent .second-content-container .cake-image picture .top-right-cake {
-  -webkit-animation: 3s ease-in-out 0.5s infinite normal none running img-moon;
-          animation: 3s ease-in-out 0.5s infinite normal none running img-moon;
+.cake-container .cake-content .cake-image picture .top-right-cake {
+  -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
   position: absolute;
   top: 0;
   right: 0;
@@ -357,9 +357,9 @@
   width: 400px;
 }
 
-.second-container-Laurent .second-content-container .cake-image picture .top-left-cake {
-  -webkit-animation: 3s ease-in-out 1s infinite normal none running img-moon;
-          animation: 3s ease-in-out 1s infinite normal none running img-moon;
+.cake-container .cake-content .cake-image picture .top-left-cake {
+  -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
   position: absolute;
   top: 0;
   left: -260px;
@@ -367,16 +367,16 @@
   width: 400px;
 }
 
-.second-container-Laurent .second-content-container .cake-image picture .coin-cake {
-  -webkit-animation: 3s ease-in-out 1.2s infinite normal none running img-moon;
-          animation: 3s ease-in-out 1.2s infinite normal none running img-moon;
+.cake-container .cake-content .cake-image picture .coin-cake {
+  -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
   position: absolute;
   height: 350px;
   width: 400px;
   right: 0;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table {
+.cake-container .cake-content .cake-data-table {
   margin-top: 100px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -392,62 +392,62 @@
           column-gap: 150px;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data {
+.cake-container .cake-content .cake-data-table .data {
   padding: 10px;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data .data-title {
+.cake-container .cake-content .cake-data-table .data .data-title {
   font-size: 16px;
   color: #7a6eaa;
   font-weight: 400;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data .data-num {
+.cake-container .cake-content .cake-data-table .data .data-num {
   font-size: 24px;
   color: #280D5F;
   font-weight: 500;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data1  {
+.cake-container .cake-content .cake-data-table .data1  {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: d1;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data-2 {
+.cake-container .cake-content .cake-data-table .data-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: d2;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data-3 {
+.cake-container .cake-content .cake-data-table .data-3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: d3;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data-4 {
+.cake-container .cake-content .cake-data-table .data-4 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: d4;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data-5 {
+.cake-container .cake-content .cake-data-table .data-5 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: d5;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data-6 {
+.cake-container .cake-content .cake-data-table .data-6 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: d6;
 }
 
-.second-container-Laurent .second-content-container .cake-data-table .data2,
-.second-container-Laurent .second-content-container .cake-data-table .data3,
-.second-container-Laurent .second-content-container .cake-data-table .data5,
-.second-container-Laurent .second-content-container .cake-data-table .data6 {
+.cake-container .cake-content .cake-data-table .data2,
+.cake-container .cake-content .cake-data-table .data3,
+.cake-container .cake-content .cake-data-table .data5,
+.cake-container .cake-content .cake-data-table .data6 {
   border-left: 2px solid rgba(122, 110, 170, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

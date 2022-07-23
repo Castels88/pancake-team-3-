@@ -31,7 +31,7 @@
     @return ($pix / 16) + rem;
 }
 
-.first-container-Laurent {
+.winMillion-container {
     width: 100%;
     height: toRem(800);
     padding: toRem(20) 0;
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .content-container-Laurent {
+    .winMillion-content {
         background-color: rgb(208,229,250);
         padding: toRem(20) 0;
         height: toRem(550);
@@ -66,14 +66,14 @@
             @include fontStyle(16px, rgb(122, 110, 170));
             font-weight: 300;
         }
-        .card-container-Laurent {
+        .card-container {
             /* text-align: center; */
             grid-area: card;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            .card-Laurent {
+            .card {
                 padding: toRem(15);
                 margin: toRem(10);
                 height: toRem(350);
@@ -110,7 +110,7 @@
                     }
                    }
             }
-            .left-card-Laurent {
+            .left-card {
                 background: linear-gradient(rgb(254,178,55), rgb(255,230,104));
                 margin-right: toRem(15);
                 transform: rotate(-3deg);
@@ -134,7 +134,7 @@
                     color: rgb(40, 13, 95);
                 }
             }
-            .right-card-Laurent {
+            .right-card {
                 background: linear-gradient(rgb(117,67,216), rgb(81,33,177));
                 color: white;
                 margin-left: toRem(15);
@@ -163,14 +163,14 @@
     }
 }
 
-.second-container-Laurent {
+.cake-container {
     height: toRem(800);
     width: 100%;
     padding: toRem(20) 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    .second-content-container {
+    .cake-content {
         display: grid;
         grid-template-columns: repeat(1fr, 3);
         grid-template-areas: 
@@ -244,7 +244,7 @@
                 width: 400px;
             }
             .top-right-cake {
-                animation: 3s ease-in-out 0.5s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+                animation: 3s ease-in-out 0.3s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -252,7 +252,7 @@
                 width: 400px;
             }
             .top-left-cake {
-                animation: 3s ease-in-out 1s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+                animation: 3s ease-in-out 0.6s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 top: 0;
                 left: -260px;
@@ -260,7 +260,7 @@
                 width: 400px;
             }
             .coin-cake {
-                animation: 3s ease-in-out 1.2s infinite normal none running img-moon; //va messa {} dell'img di riferimento
+                animation: 3s ease-in-out 0.9s infinite normal none running img-moon; //va messa {} dell'img di riferimento
                 position: absolute;
                 height: 350px;
                 width: 400px;
