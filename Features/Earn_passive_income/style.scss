@@ -54,8 +54,8 @@
                 align-items: center;
                 justify-content: flex-end;                                    
                     .earn_p_i_image1{
-                        width: 300px;
-                        height: 300px;
+                        width: 350px;
+                        height: 400px;
                         position: absolute;
                         animation: 3s ease-in-out 0s infinite normal none running img-wallet
                     }
@@ -71,14 +71,14 @@
                         }
                     }                                   
                     .earn_p_i_image2{
-                        width: 300px;
-                        height: 300px;
+                        width: 400px;
+                        height: 400px;
                         position: absolute;
                         animation: 3s ease-in-out 0s infinite normal none running img-wallet
                     }                   
                     .earn_p_i_image3{
-                        width: 300px;
-                        height: 300px;
+                        width: 350px;
+                        height: 400px;
                         animation: 3s ease-in-out 0s infinite normal none running img-wallet
                     }
                 
@@ -168,12 +168,27 @@
                     fill: #7A6EAA;
                     cursor: pointer;
                 }
+                
             }
             .Earn_p_i_lower_big_container{
                 width: 70%;
                 display: flex;
                 padding: 10px;
                 gap: 15px;
+                animation: 1s ease-in-out 3s normal none running movimento;
+                
+            @keyframes movimento {
+                50%{
+                    transform: translateY(30px);                                   
+                }
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0;
+                }              
+                
+            }
                 .Earn_p_i_container1{
                     width: 200px;
                     display: flex;
@@ -290,7 +305,6 @@
                 width: 100%;
                 height: 35%;
                 padding: 10px;
-                // display: flex;
                 flex-direction: column;
                 align-items: center;
                 .Earn_p_i_h2_switch{
@@ -312,11 +326,22 @@
                     }
                 }
                 .Earn_p_i_lower_big_container{
-                    display: none;
                     width: 70%;
                     display: flex;
                     padding: 10px;
                     gap: 15px;
+                    animation: 1s ease-in-out 3s normal none running movimento;
+                @keyframes movimento {
+                    50%{
+                        transform: translateY(30px);
+                    }
+                    from{
+                        opacity: 1;
+                    }
+                    to{
+                        opacity: 0;
+                    }                    
+                }    
                     .Earn_p_i_container1{
                         width: 200px;
                         display: flex;
