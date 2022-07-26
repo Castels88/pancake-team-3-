@@ -46,7 +46,7 @@
             border-radius: 30px;
             padding: 30px;
             border-bottom: 8px solid lightgray;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
 
             .card_top, 
             .card_bottom {
@@ -81,4 +81,44 @@
         }
     }
 
+}
+
+@media screen and (max-width: 968px) {
+    
+}
+
+@media screen and (max-width: 852px) {
+    .usedby_federico {
+        height: auto;
+        .usedbottom_federico {
+            flex-direction: column;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            .card_federico {
+                height: 180px;
+                .card_top {
+                    display: none;
+                }
+                .card_bottom {
+                    
+                    h2 {
+                        font-size: 30px;
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+}
+}
+
+@media screen and (max-width: 576px) {
+    .usedby_federico {
+
+        .usedtop_federico {
+
+            p {
+                padding: 0px 20px;
+            }
+        }
+    }
 }

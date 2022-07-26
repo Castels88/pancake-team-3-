@@ -8,7 +8,7 @@
 }
 
 .moon_federico {
-  height: 50rem;
+  height: 55rem;
   width: 100%;
   padding: 0px 100px;
   background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
@@ -22,32 +22,35 @@
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .moon_federico .top_federico .countdown_federico {
   background-color: blue;
   border-radius: 30px;
   width: 100%;
   height: 200px;
-  background-color: rgb(118, 69, 217);
+  background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  z-index: 1;
 }
 .moon_federico .top_federico .countdown_federico h2 {
   color: white;
 }
 .moon_federico .top_federico .countdown_federico .counter_federico {
   background-color: #280D5F;
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 40px;
   border-radius: 10px;
 }
 .moon_federico .top_federico .countdown_federico .counter_federico .timer_federico {
   height: 100%;
   width: 100%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +65,18 @@
   font-size: 20px;
   font-weight: bold;
 }
+.moon_federico .top_federico .countdown_federico .lottery_federico img {
+  position: absolute;
+  height: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  bottom: 0;
+  right: 0;
+}
+.moon_federico .top_federico .countdown_federico .lottery_federico img:last-child {
+  visibility: hidden;
+}
 .moon_federico .top_federico .countdown_federico #mainbutton_federico {
   border: 1px solid #1FC7D4;
   border-radius: 15px;
@@ -74,17 +89,7 @@
   transition: all 0.3s ease;
 }
 .moon_federico .top_federico .countdown_federico #mainbutton_federico:hover {
-  background-color: #1D8999;
-  border: 1px solid #1D8999;
-  color: #AFADB4;
-}
-.moon_federico .top_federico img {
-  position: absolute;
-  height: auto;
-  width: 350px;
-  margin: auto;
-  right: 200px;
-  z-index: 2;
+  opacity: 0.7;
 }
 .moon_federico .bottom_federico {
   width: 100%;
@@ -133,9 +138,7 @@
   transition: all 0.3s ease;
 }
 .moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #mainbutton_federico:hover {
-  background-color: #1D8999;
-  border: 1px solid #1D8999;
-  color: #AFADB4;
+  opacity: 0.7;
 }
 .moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #secondarybutton_federico {
   border: 2px solid #1FC7D4;
@@ -149,16 +152,122 @@
   transition: all 0.3s ease;
 }
 .moon_federico .bottom_federico .bottomleft_federico .bottoni_federico #secondarybutton_federico:hover {
-  color: #1D8999;
-  border: 1px solid #1D8999;
+  opacity: 0.7;
 }
 .moon_federico .bottom_federico .bottomright_federico {
   width: 50%;
 }
 .moon_federico .bottom_federico .bottomright_federico img {
-  max-width: 80%;
+  max-width: 99%;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0s infinite normal none running img-moon;
 }
 
+@-webkit-keyframes img-moon {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes img-moon {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .moon_federico {
+    padding: 0px 40px;
+  }
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:first-child {
+    width: 100%;
+    height: auto;
+  }
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:last-child {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 968px) {
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:first-child {
+    visibility: hidden;
+  }
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:last-child {
+    visibility: visible;
+    padding-top: 50px;
+    right: 0;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 852px) {
+  .moon_federico {
+    padding: 0px 40px;
+  }
+  .moon_federico .bottom_federico {
+    flex-direction: column;
+  }
+  .moon_federico .bottom_federico .bottomleft_federico {
+    order: 2;
+    width: 100%;
+  }
+  .moon_federico .bottom_federico .bottomleft_federico #maintext_federico {
+    font-size: 45px;
+    width: 100%;
+  }
+  .moon_federico .bottom_federico .bottomleft_federico #secondarytext_federico {
+    width: 100%;
+  }
+  .moon_federico .bottom_federico .bottomright_federico {
+    order: 1;
+  }
+  .moon_federico .bottom_federico .bottomright_federico img {
+    margin-left: 200px;
+    width: 80%;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .moon_federico {
+    padding: 0px 30px;
+  }
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:first-child {
+    visibility: hidden;
+  }
+  .moon_federico .top_federico .countdown_federico .lottery_federico img:last-child {
+    visibility: visible;
+    padding-top: 50px;
+    right: 0;
+    width: 40%;
+  }
+  .moon_federico .bottom_federico {
+    flex-direction: column;
+  }
+  .moon_federico .bottom_federico .bottomleft_federico {
+    order: 2;
+    width: 100%;
+  }
+  .moon_federico .bottom_federico .bottomleft_federico #maintext_federico {
+    font-size: 45px;
+  }
+  .moon_federico .bottom_federico .bottomright_federico {
+    order: 1;
+  }
+  .moon_federico .bottom_federico .bottomright_federico img {
+    margin-left: 200px;
+    width: 80%;
+    padding-bottom: 25px;
+  }
+}
 .usedby_federico {
   height: 50rem;
   width: 100%;
@@ -203,6 +312,7 @@
   border-radius: 30px;
   padding: 30px;
   border-bottom: 8px solid lightgray;
+  flex-wrap: wrap;
 }
 .usedby_federico .usedbottom_federico .card_federico .card_top,
 .usedby_federico .usedbottom_federico .card_federico .card_bottom {
@@ -233,4 +343,30 @@
 }
 .usedby_federico .usedbottom_federico .card_federico .card_bottom h2 #diff3 {
   color: rgb(237, 75, 158);
+}
+
+@media screen and (max-width: 852px) {
+  .usedby_federico {
+    height: auto;
+  }
+  .usedby_federico .usedbottom_federico {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .usedby_federico .usedbottom_federico .card_federico {
+    height: 180px;
+  }
+  .usedby_federico .usedbottom_federico .card_federico .card_top {
+    display: none;
+  }
+  .usedby_federico .usedbottom_federico .card_federico .card_bottom h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .usedby_federico .usedtop_federico p {
+    padding: 0px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -18,15 +18,19 @@
     
         <div class="top_federico">
             <div class="countdown_federico">
-                <h2>Win $73.418 in Lottery</h2>
+                <h2>Win <span id="lotteryChange"></span> in Lottery</h2>
                 <div class="counter_federico">
                     <div class="timer_federico">
-                        <p>8<span>h</span> 39<span>m</span> 47<span>s</span></p>
+                        <!-- <p>8<span>h</span> 39<span>m</span> 47<span>s</span></p> -->
+                        <p id="timerCountdown"></p>
                     </div>
                 </div>
-                <button id="mainbutton_federico">Play Now</button>
+                <a href="https://pancakeswap.finance/lottery"><button id="mainbutton_federico">Play Now</button></a>
+                <div class="lottery_federico">
+                    <img src="assets/img/lottery.webp" alt="">
+                    <img src="assets/img/lotteryMobile.webp" alt="">
+                </div>
             </div>
-            <img src="assets/img/lotteryMobile.webp" alt="">
         </div>
     
         <!--  -->
@@ -70,7 +74,7 @@
                     <img src="assets/img/svgexport-15.svg" alt="">
                 </div>
                 <div class="card_bottom">
-                    <h2>2.3 million <p id="diff1">users</p></h2>
+                    <h2>2.3 million <h id="diff1">users</p></h2>
                     <p>in the last 30 days</p>
                 </div>
             </div>
@@ -101,7 +105,7 @@
 
 </div>
 
-
+<script src="index.js"></script>
 
 <!-- Fine Federico -->
 
