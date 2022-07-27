@@ -116,6 +116,9 @@ nav .destra {
   justify-content: flex-end;
   align-items: center;
 }
+nav .destra .icon {
+  padding: 10px;
+}
 nav .destra .money {
   color: rgb(122, 110, 170);
   font-weight: 600;
@@ -205,6 +208,112 @@ nav .destra .mainbuttons:hover {
   color: white;
 }
 
+@media screen and (max-width: 371px) {
+  nav .sinistra {
+    width: 50%;
+  }
+  nav .sinistra .logo {
+    display: none;
+  }
+  nav .sinistra .logo a {
+    display: none;
+  }
+  nav .sinistra .bottoni {
+    display: none;
+  }
+  nav .sinistra .bottoni .navmenubuttons {
+    display: none;
+  }
+  nav .destra {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  nav .destra .icon {
+    display: none;
+  }
+  nav .destra .money {
+    display: none;
+  }
+  nav .destra .mainbuttons {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1FC7D4;
+    border-radius: 20px;
+    width: 110px;
+    height: 35px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #1FC7D4;
+    transition: all 0.3s ease;
+  }
+  nav .destra .mainbuttons a {
+    text-decoration: none;
+    color: white;
+    content: "Connect";
+  }
+  nav .destra .mainbuttons:hover {
+    background-color: #1D8999;
+    border: 1px solid #1D8999;
+    border-radius: 20px;
+    color: white;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav .sinistra {
+    width: 60%;
+    display: flex;
+  }
+  nav .sinistra .logo {
+    display: none;
+  }
+  nav .sinistra .logo a {
+    display: none;
+  }
+  nav .sinistra .bottoni {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav .destra {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav .destra .icon {
+    display: none;
+  }
+  nav .destra .money {
+    display: none;
+  }
+  nav .destra .mainbuttons {
+    display: flex;
+    align-items: center;
+    border: 1px solid #1FC7D4;
+    border-radius: 20px;
+    width: 110px;
+    height: 35px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #1FC7D4;
+    transition: all 0.3s ease;
+  }
+  nav .destra .mainbuttons a {
+    text-decoration: none;
+    color: white;
+    content: "Connect";
+  }
+  nav .destra .mainbuttons:hover {
+    background-color: #1D8999;
+    border: 1px solid #1D8999;
+    border-radius: 20px;
+    color: white;
+  }
+}
 * {
   font-family: "Kanit";
 }/*# sourceMappingURL=style.css.map */
