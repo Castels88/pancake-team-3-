@@ -11,7 +11,7 @@
 .Container-Footer {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 50%;
   width: 100%;
   background-color: #27262c;
   justify-content: center;
@@ -226,6 +226,7 @@
 
 @media screen and (max-width: 768px) {
   .Container-Footer {
+    height:100%;
     justify-content: start;
   }
   .Container-Footer-Firstbar {
