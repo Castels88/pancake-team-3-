@@ -212,7 +212,7 @@ nav .destra .mainbuttons:hover {
   display: none;
 }
 
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 370px) {
   nav .sinistra {
     width: 50%;
   }
