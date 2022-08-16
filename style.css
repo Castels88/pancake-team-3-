@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @use "moduloRoot";
 @-webkit-keyframes img-moon {
@@ -57,6 +58,9 @@
   font-size: 40px;
   color: #280D5F;
   font-weight: 550;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: title;
   text-align: center;
 }
@@ -203,36 +207,32 @@
   color: white;
 }
 
-@media screen and (max-width: 575px) {
-  .winMillion-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+/* @media screen and (max-width: 575px) {
+    .winMillion-container {
+        display: flex;
+        flex-direction: column;
+        .winMillion-content {
+            display: flex;
             flex-direction: column;
-  }
-  .winMillion-container .winMillion-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .card-container {
-    background-color: red;
-  }
+        }
+    }
+    .card-container {
+        background-color: red;
+
+    }
 }
 
 @media screen and (max-width: 851px) {
-  .card-container {
-    background-color: red;
-  }
-}
+    .winMillion-container {
+        .winMillion-content {
+            
+        }
+    }
+    .card-container {
+        background-color: red;
 
+    }
+} */
 @media screen and (min-width: 852px) {
   .winMillion-container {
     display: -webkit-box;
@@ -254,5 +254,227 @@
   }
 }
 
-/* @import 'cake'; */
+.cake-container {
+  height: 50rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cake-container .cake-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3)[1fr];
+      grid-template-columns: repeat(1fr, 3);
+      grid-template-areas: 'title title image' 'desc desc image' 'buttons . image' 'data data data';
+}
+
+.cake-container .cake-content .cake-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  margin-bottom: 20px;
+}
+
+.cake-container .cake-content .cake-title h2 {
+  font-size: 40px;
+  color: #280D5F;
+  font-weight: 550;
+  line-height: 45px;
+}
+
+.cake-container .cake-content .cake-title h2 .purple-cake {
+  color: #7645d9;
+}
+
+.cake-container .cake-content .cake-description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: desc;
+  text-align: left;
+  font-size: 16px;
+  color: #7a6eaa;
+  font-weight: 300;
+}
+
+.cake-container .cake-content .cake-buttons {
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 25px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: buttons;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.cake-container .cake-content .cake-buttons button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #1FC7D4;
+  border-radius: 15px;
+  width: 44%;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #1FC7D4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 1.5px 0px #072f32;
+          box-shadow: 0px 1.5px 0px #072f32;
+}
+
+.cake-container .cake-content .cake-buttons button:hover {
+  opacity: .5;
+}
+
+.cake-container .cake-content .cake-buttons a {
+  text-decoration: none;
+  color: #1FC7D4;
+  margin: 0 10px;
+}
+
+.cake-container .cake-content .cake-buttons a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1FC7D4;
+          text-decoration-color: #1FC7D4;
+}
+
+.cake-container .cake-content .cake-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: image;
+  position: relative;
+}
+
+.cake-container .cake-content .cake-image picture .bottom-right-cake {
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0s infinite normal none running img-moon;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  height: 350px;
+  width: 400px;
+}
+
+.cake-container .cake-content .cake-image picture .top-right-cake {
+  -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 350px;
+  width: 400px;
+}
+
+.cake-container .cake-content .cake-image picture .top-left-cake {
+  -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+  position: absolute;
+  top: 0;
+  left: -260px;
+  height: 350px;
+  width: 400px;
+}
+
+.cake-container .cake-content .cake-image picture .coin-cake {
+  -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+          animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  right: 0;
+}
+
+.cake-container .cake-content .cake-data-table {
+  margin-top: 100px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: data;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'd1 d2 d3' 'd4 d5 d6';
+  row-gap: 25px;
+  -webkit-column-gap: 150px;
+          column-gap: 150px;
+}
+
+.cake-container .cake-content .cake-data-table .data {
+  padding: 10px;
+}
+
+.cake-container .cake-content .cake-data-table .data .data-title {
+  font-size: 16px;
+  color: #7a6eaa;
+  font-weight: 400;
+}
+
+.cake-container .cake-content .cake-data-table .data .data-num {
+  font-size: 24px;
+  color: #280D5F;
+  font-weight: 500;
+}
+
+.cake-container .cake-content .cake-data-table .data1  {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: d1;
+}
+
+.cake-container .cake-content .cake-data-table .data-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: d2;
+}
+
+.cake-container .cake-content .cake-data-table .data-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: d3;
+}
+
+.cake-container .cake-content .cake-data-table .data-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: d4;
+}
+
+.cake-container .cake-content .cake-data-table .data-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d5;
+}
+
+.cake-container .cake-content .cake-data-table .data-6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d6;
+}
+
+.cake-container .cake-content .cake-data-table .data2,
+.cake-container .cake-content .cake-data-table .data3,
+.cake-container .cake-content .cake-data-table .data5,
+.cake-container .cake-content .cake-data-table .data6 {
+  border-left: 2px solid rgba(122, 110, 170, 0.4);
+}
 /*# sourceMappingURL=style.css.map */
