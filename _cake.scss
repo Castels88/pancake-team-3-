@@ -172,9 +172,14 @@
       flex-direction: column;
       align-items: center;
       .cake-image {
-        img {
-          height: 150px;
-          width: 200;
+        align-self: flex-end;
+        picture {
+            position: relative;
+          img {
+            position: absolute;
+            height: 150px;
+            width: 200;
+          }
         }
       }
       .cake-buttons {

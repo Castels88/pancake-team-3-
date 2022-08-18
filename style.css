@@ -536,7 +536,15 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .cake-container .cake-content .cake-image img {
+  .cake-container .cake-content .cake-image {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .cake-container .cake-content .cake-image picture {
+    position: relative;
+  }
+  .cake-container .cake-content .cake-image picture img {
+    position: absolute;
     height: 150px;
     width: 200;
   }
