@@ -5,8 +5,7 @@
       background-color: rgb(208, 229, 250);
       border-radius: toRem(50);
       padding: toRem(20) 0;
-      margin: toRem(40) 0;
-      width: 60%;
+      margin: toRem(100) 0;
       .main-title {
         @include fontStyle(40px, #280d5f);
         font-weight: 550;
@@ -117,6 +116,7 @@
           justify-content: center;
           align-items: center;
           .winMillion-content {
+            width: 60%;
               height: toRem(550);
               display: grid;
               grid-template-columns: 1fr 1fr;
@@ -157,6 +157,7 @@
           justify-content: center;
           align-items: center;
           .winMillion-content {
+            width: 65%;
               height: auto;
               display: flex;
               flex-direction: column;
