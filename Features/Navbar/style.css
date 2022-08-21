@@ -30,21 +30,21 @@ nav {
   padding-left: 16px;
   padding-right: 16px;
 }
-nav .sinistra {
+nav .Navbar_sinistra {
   width: 60%;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-nav .sinistra .logo {
+nav .Navbar_sinistra .Navbar_logo {
   display: flex;
   align-items: center;
   height: 100%;
   font-size: 20px;
   font-weight: bolder;
 }
-nav .sinistra .bottoni {
+nav .Navbar_sinistra .Navbar_bottoni {
   display: flex;
   width: 300px;
   justify-content: space-around;
@@ -52,7 +52,7 @@ nav .sinistra .bottoni {
   height: 100%;
   padding-top: 8px;
 }
-nav .sinistra .bottoni .navmenubuttons {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
   height: 90%;
   padding: 5px;
   margin-top: 3px;
@@ -67,21 +67,21 @@ nav .sinistra .bottoni .navmenubuttons {
   cursor: pointer;
   list-style-type: none;
 }
-nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
 }
-nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content:hover .element {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content:hover .Navbar_element {
   display: block;
   display: flex;
   justify-content: space-between;
 }
-nav .sinistra .bottoni .navmenubuttons li a {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn li a {
   text-decoration: none;
   color: #7A6EAA;
 }
-nav .sinistra .bottoni .navmenubuttons .dropdown_content {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
@@ -95,7 +95,7 @@ nav .sinistra .bottoni .navmenubuttons .dropdown_content {
   z-index: 1001;
   flex-direction: column;
 }
-nav .sinistra .bottoni .navmenubuttons .dropdown_content .element {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element {
   display: flex;
   justify-content: space-between;
   height: 48px;
@@ -103,23 +103,23 @@ nav .sinistra .bottoni .navmenubuttons .dropdown_content .element {
   align-items: center;
   padding: 10px;
 }
-nav .sinistra .bottoni .navmenubuttons .dropdown_content .element:hover {
+nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element:hover {
   display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
   border-radius: 10px;
 }
-nav .destra {
+nav .Navbar_destra {
   width: 40%;
   height: 56px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav .destra .icon {
+nav .Navbar_destra .icon {
   padding: 10px;
 }
-nav .destra .money {
+nav .Navbar_destra .Navbar_money {
   color: rgb(122, 110, 170);
   font-weight: 600;
   line-height: 1.5;
@@ -127,22 +127,22 @@ nav .destra .money {
   font-weight: bold;
   padding: 10px;
 }
-nav .destra .language {
+nav .Navbar_destra .Navbar_language {
   height: 100%;
   display: flex;
 }
-nav .destra .language:hover .dropdown_content {
+nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
 }
-nav .destra .language:hover .dropdown_content:hover .element {
+nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
   display: block;
 }
-nav .destra .language svg {
+nav .Navbar_destra .Navbar_language svg {
   fill: rgb(118, 69, 217);
 }
-nav .destra .language .dropdown_content {
+nav .Navbar_destra .Navbar_language .Navbar_dropdown_content {
   overflow-y: scroll;
   display: none;
   position: absolute;
@@ -156,34 +156,34 @@ nav .destra .language .dropdown_content {
   max-height: 180px;
   flex-direction: column;
 }
-nav .destra .language .dropdown_content .element {
+nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element {
   height: 48px;
   width: 100%;
   align-items: center;
   padding: 10px;
 }
-nav .destra .language .dropdown_content .element a {
+nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
   text-decoration: none;
   color: rgb(40, 13, 95);
   font-weight: bold;
 }
-nav .destra .language .dropdown_content .element:hover {
+nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
   display: block;
   border: 1px solid rgb(216, 212, 212);
   background-color: rgb(216, 212, 212);
   border-radius: 10px;
 }
-nav .destra .settings_elio {
+nav .Navbar_destra .Navbar_settings_menu {
   margin-top: 2px;
   padding: 10px;
   background-color: white;
   border: 1px solid white;
   cursor: pointer;
 }
-nav .destra .settings_elio svg {
+nav .Navbar_destra .Navbar_settings_menu svg {
   fill: rgb(118, 69, 217);
 }
-nav .destra .mainbuttons {
+nav .Navbar_destra .Navbar_main_buttons {
   display: flex;
   align-items: center;
   border: 1px solid #1FC7D4;
@@ -197,11 +197,11 @@ nav .destra .mainbuttons {
   background-color: #1FC7D4;
   transition: all 0.3s ease;
 }
-nav .destra .mainbuttons a {
+nav .Navbar_destra .Navbar_main_buttons a {
   text-decoration: none;
   color: white;
 }
-nav .destra .mainbuttons:hover {
+nav .Navbar_destra .Navbar_main_buttons:hover {
   background-color: #1D8999;
   border: 1px solid #1D8999;
   border-radius: 20px;
@@ -213,34 +213,34 @@ nav .destra .mainbuttons:hover {
 }
 
 @media screen and (max-width: 370px) {
-  nav .sinistra {
+  nav .Navbar_sinistra {
     width: 50%;
   }
-  nav .sinistra .logo {
+  nav .Navbar_sinistra .Navbar_logo {
     display: none;
   }
-  nav .sinistra .logo a {
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
-  nav .sinistra .bottoni {
+  nav .Navbar_sinistra .Navbar_bottoni {
     display: none;
   }
-  nav .sinistra .bottoni .navmenubuttons {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
     display: none;
   }
-  nav .destra {
+  nav .Navbar_destra {
     width: 50%;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
   }
-  nav .destra .icon {
+  nav .Navbar_destra .icon {
     display: none;
   }
-  nav .destra .money {
+  nav .Navbar_destra .Navbar_money {
     display: none;
   }
-  nav .destra .mainbuttons {
+  nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
     border: 1px solid #1FC7D4;
@@ -254,12 +254,12 @@ nav .destra .mainbuttons:hover {
     background-color: #1FC7D4;
     transition: all 0.3s ease;
   }
-  nav .destra .mainbuttons a {
+  nav .Navbar_destra .Navbar_main_buttons a {
     text-decoration: none;
     color: white;
     content: "Connect";
   }
-  nav .destra .mainbuttons:hover {
+  nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: #1D8999;
     border: 1px solid #1D8999;
     border-radius: 20px;
@@ -303,32 +303,32 @@ nav .destra .mainbuttons:hover {
   }
 }
 @media screen and (max-width: 576px) {
-  nav .sinistra {
+  nav .Navbar_sinistra {
     width: 60%;
     display: flex;
   }
-  nav .sinistra .logo {
+  nav .Navbar_sinistra .Navbar_logo {
     display: none;
   }
-  nav .sinistra .logo a {
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
-  nav .sinistra .bottoni {
+  nav .Navbar_sinistra .Navbar_bottoni {
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra {
+  nav .Navbar_destra {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra .icon {
+  nav .Navbar_destra .icon {
     display: none;
   }
-  nav .destra .money {
+  nav .Navbar_destra .Navbar_money {
     display: none;
   }
-  nav .destra .mainbuttons {
+  nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
     border: 1px solid #1FC7D4;
@@ -342,12 +342,12 @@ nav .destra .mainbuttons:hover {
     background-color: #1FC7D4;
     transition: all 0.3s ease;
   }
-  nav .destra .mainbuttons a {
+  nav .Navbar_destra .Navbar_main_buttons a {
     text-decoration: none;
     color: white;
     content: "Connect";
   }
-  nav .destra .mainbuttons:hover {
+  nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: #1D8999;
     border: 1px solid #1D8999;
     border-radius: 20px;
@@ -355,29 +355,29 @@ nav .destra .mainbuttons:hover {
   }
 }
 @media screen and (max-width: 852px) {
-  nav .sinistra {
+  nav .Navbar_sinistra {
     width: 60%;
     display: flex;
   }
-  nav .sinistra .logo {
+  nav .Navbar_sinistra .Navbar_logo {
     display: none;
   }
-  nav .sinistra .logo a {
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
-  nav .sinistra .bottoni {
+  nav .Navbar_sinistra .Navbar_bottoni {
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra {
+  nav .Navbar_destra {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra .icon {
+  nav .Navbar_destra .icon {
     padding: 10px;
   }
-  nav .destra .money {
+  nav .Navbar_destra .Navbar_money {
     color: rgb(122, 110, 170);
     font-weight: 600;
     line-height: 1.5;
@@ -385,7 +385,7 @@ nav .destra .mainbuttons:hover {
     font-weight: bold;
     padding: 10px;
   }
-  nav .destra .mainbuttons {
+  nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
     border: 1px solid #1FC7D4;
@@ -399,12 +399,12 @@ nav .destra .mainbuttons:hover {
     background-color: #1FC7D4;
     transition: all 0.3s ease;
   }
-  nav .destra .mainbuttons a {
+  nav .Navbar_destra .Navbar_main_buttons a {
     text-decoration: none;
     color: white;
     content: "Connect";
   }
-  nav .destra .mainbuttons:hover {
+  nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: #1D8999;
     border: 1px solid #1D8999;
     border-radius: 20px;
@@ -412,29 +412,29 @@ nav .destra .mainbuttons:hover {
   }
 }
 @media screen and (max-width: 968px) {
-  nav .sinistra {
+  nav .Navbar_sinistra {
     width: 60%;
     display: flex;
   }
-  nav .sinistra .logo {
+  nav .Navbar_sinistra .Navbar_logo {
     display: none;
   }
-  nav .sinistra .logo a {
+  nav .Navbar_sinistra .Navbar_logo a {
     display: none;
   }
-  nav .sinistra .bottoni {
+  nav .Navbar_sinistra .Navbar_bottoni {
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra {
+  nav .Navbar_destra {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
   }
-  nav .destra .icon {
+  nav .Navbar_destra .icon {
     padding: 10px;
   }
-  nav .destra .money {
+  nav .Navbar_destra .Navbar_money {
     color: rgb(122, 110, 170);
     font-weight: 600;
     line-height: 1.5;
@@ -442,7 +442,7 @@ nav .destra .mainbuttons:hover {
     font-weight: bold;
     padding: 10px;
   }
-  nav .destra .mainbuttons {
+  nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
     border: 1px solid #1FC7D4;
@@ -456,12 +456,12 @@ nav .destra .mainbuttons:hover {
     background-color: #1FC7D4;
     transition: all 0.3s ease;
   }
-  nav .destra .mainbuttons a {
+  nav .Navbar_destra .Navbar_main_buttons a {
     text-decoration: none;
     color: white;
     content: "Connect";
   }
-  nav .destra .mainbuttons:hover {
+  nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: #1D8999;
     border: 1px solid #1D8999;
     border-radius: 20px;
@@ -479,21 +479,21 @@ nav .destra .mainbuttons:hover {
     padding-left: 16px;
     padding-right: 16px;
   }
-  nav .sinistra {
+  nav .Navbar_sinistra {
     width: 60%;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  nav .sinistra .logo {
+  nav .Navbar_sinistra .Navbar_logo {
     display: flex;
     align-items: center;
     height: 100%;
     font-size: 20px;
     font-weight: bolder;
   }
-  nav .sinistra .bottoni {
+  nav .Navbar_sinistra .Navbar_bottoni {
     display: flex;
     width: 300px;
     justify-content: space-around;
@@ -501,7 +501,7 @@ nav .destra .mainbuttons:hover {
     height: 100%;
     padding-top: 8px;
   }
-  nav .sinistra .bottoni .navmenubuttons {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn {
     height: 90%;
     padding: 5px;
     margin-top: 3px;
@@ -516,21 +516,21 @@ nav .destra .mainbuttons:hover {
     cursor: pointer;
     list-style-type: none;
   }
-  nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content {
     border: 1px solid rgb(216, 212, 212);
     border-radius: 10px;
     display: block;
   }
-  nav .sinistra .bottoni .navmenubuttons:hover .dropdown_content:hover .element {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn:hover .Navbar_dropdown_content:hover .Navbar_element {
     display: block;
     display: flex;
     justify-content: space-between;
   }
-  nav .sinistra .bottoni .navmenubuttons li a {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn li a {
     text-decoration: none;
     color: #7A6EAA;
   }
-  nav .sinistra .bottoni .navmenubuttons .dropdown_content {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content {
     display: none;
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -544,7 +544,7 @@ nav .destra .mainbuttons:hover {
     z-index: 1001;
     flex-direction: column;
   }
-  nav .sinistra .bottoni .navmenubuttons .dropdown_content .element {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element {
     display: flex;
     justify-content: space-between;
     height: 48px;
@@ -552,23 +552,23 @@ nav .destra .mainbuttons:hover {
     align-items: center;
     padding: 10px;
   }
-  nav .sinistra .bottoni .navmenubuttons .dropdown_content .element:hover {
+  nav .Navbar_sinistra .Navbar_bottoni .Navbar_menuBtn .Navbar_dropdown_content .Navbar_element:hover {
     display: block;
     border: 1px solid rgb(216, 212, 212);
     background-color: rgb(216, 212, 212);
     border-radius: 10px;
   }
-  nav .destra {
+  nav .Navbar_destra {
     width: 40%;
     height: 56px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  nav .destra .icon {
+  nav .Navbar_destra .icon {
     padding: 10px;
   }
-  nav .destra .money {
+  nav .Navbar_destra .Navbar_money {
     color: rgb(122, 110, 170);
     font-weight: 600;
     line-height: 1.5;
@@ -576,22 +576,22 @@ nav .destra .mainbuttons:hover {
     font-weight: bold;
     padding: 10px;
   }
-  nav .destra .language {
+  nav .Navbar_destra .Navbar_language {
     height: 100%;
     display: flex;
   }
-  nav .destra .language:hover .dropdown_content {
+  nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
     border: 1px solid rgb(216, 212, 212);
     border-radius: 10px;
     display: block;
   }
-  nav .destra .language:hover .dropdown_content:hover .element {
+  nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
     display: block;
   }
-  nav .destra .language svg {
+  nav .Navbar_destra .Navbar_language svg {
     fill: rgb(118, 69, 217);
   }
-  nav .destra .language .dropdown_content {
+  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content {
     overflow-y: scroll;
     display: none;
     position: absolute;
@@ -605,34 +605,34 @@ nav .destra .mainbuttons:hover {
     max-height: 180px;
     flex-direction: column;
   }
-  nav .destra .language .dropdown_content .element {
+  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element {
     height: 48px;
     width: 100%;
     align-items: center;
     padding: 10px;
   }
-  nav .destra .language .dropdown_content .element a {
+  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element a {
     text-decoration: none;
     color: rgb(40, 13, 95);
     font-weight: bold;
   }
-  nav .destra .language .dropdown_content .element:hover {
+  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content .Navbar_element:hover {
     display: block;
     border: 1px solid rgb(216, 212, 212);
     background-color: rgb(216, 212, 212);
     border-radius: 10px;
   }
-  nav .destra .settings_elio {
+  nav .Navbar_destra .Navbar_settings_menu {
     margin-top: 2px;
     padding: 10px;
     background-color: white;
     border: 1px solid white;
     cursor: pointer;
   }
-  nav .destra .settings_elio svg {
+  nav .Navbar_destra .Navbar_settings_menu svg {
     fill: rgb(118, 69, 217);
   }
-  nav .destra .mainbuttons {
+  nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
     align-items: center;
     border: 1px solid #1FC7D4;
@@ -646,11 +646,11 @@ nav .destra .mainbuttons:hover {
     background-color: #1FC7D4;
     transition: all 0.3s ease;
   }
-  nav .destra .mainbuttons a {
+  nav .Navbar_destra .Navbar_main_buttons a {
     text-decoration: none;
     color: white;
   }
-  nav .destra .mainbuttons:hover {
+  nav .Navbar_destra .Navbar_main_buttons:hover {
     background-color: #1D8999;
     border: 1px solid #1D8999;
     border-radius: 20px;
