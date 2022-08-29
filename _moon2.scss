@@ -34,13 +34,15 @@
 // 
 
 
-.moon_federico {
+.moon_container {
     height: 55rem;
     width: 100%;
     padding: 0px 100px;
     background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+    position: relative;
 
-    .top_federico {
+    .moon_top {
+        overflow: hidden;
         width: 100%;
         height: fit-content;
         display: flex;
@@ -49,8 +51,8 @@
         padding-top: 50px;
         padding-bottom: 50px;
 
-        .countdown_federico {
-            background-color: blue;
+        .moon_countdown {
+            display: inline;
             border-radius: 30px;
             width: 100%;
             height: 200px;
@@ -60,18 +62,61 @@
             flex-direction: column;
             justify-content: space-between;
             position: relative;
+            // animation: 500ms ease-in-out 0s 1 normal none running slider;
+            overflow: hidden;
+
+            #moon_perpetual {
+                color: rgb(255, 178, 55);
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            #moon_upto100 {
+                font-size: 40px;
+                color: rgb(255, 255, 255);
+                text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%) text;
+                -webkit-text-stroke: 6px transparent;
+            }
+
+            #moon_mainbutton {
+                @include mainbuttons;
+            }
+
+            .moon_lottery2 {
+
+                #moon_sliderimg {
+                    position: absolute;
+                    max-height: 120%;
+                    max-width: 100%;
+                    right: 0;
+                    bottom: 0;
+                }
+                #moon_sliderhide {
+                    // display: none;
+                    visibility: hidden;
+                    position: absolute;
+                    max-height: 120%;
+                    max-width: 100%;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
 
             h2 {
                 color: white;
             }
-            .counter_federico {
+            .moon_counter {
                 background-color: #280D5F;
                 // width: 200px;
                 width: fit-content;
                 height: 40px;
                 border-radius: 10px;
 
-                .timer_federico {
+                .moon_timer {
                     height: 100%;
                     width: 100%;
                     padding: 10px;
@@ -81,18 +126,18 @@
 
                     p {
                         color: rgb(255, 178, 55);;
-                        font-size: 40px;
+                        font-size: 2.5em;
                         font-weight: 600;
                     }
                     span {
                         color: rgb(255, 178, 55);;
-                        font-size: 20px;
+                        font-size: 1.25rem;
                         font-weight: bold;
                     }
                 }
             }
 
-            .lottery_federico {
+            .moon_lottery {
                 img {
                     position: absolute;
                     height: auto;
@@ -101,20 +146,53 @@
                     right: 0
                 }
                 img:last-child {
+                    position: absolute;
                     visibility: hidden;
                 }
             }
 
-            #mainbutton_federico {
+            #moon_mainbutton {
                 @include mainbuttons;
             }
         }
 
-        
+        .moon_sliderbox {
+            width: 100px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            margin-top: 230px;
+            display: flex;
+
+
+            .moon_slidertrasparente {
+                width: 50%;
+                background-color: gray;
+                opacity: 0.5;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+            }
+            .moon_slidercolorato {
+                border-bottom-right-radius: 50px;
+                border-top-right-radius: 50px;
+                width: 50%;
+                background-color: white;
+            }
+        }
+
+        .moon_backgroundimg {
+
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                fill: rgb(40, 13, 95);
+            }
+        }
         
     }
 
-    .bottom_federico {
+    .moon_bottom {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -122,7 +200,7 @@
     align-items: center;
     padding-top: 20px;
 
-    .bottomleft_federico {
+    .moon_bottomleft {
         width: 50%;
         height: 100%;
         display: flex;
@@ -131,38 +209,38 @@
         flex-direction: column;
         gap: 30px;
 
-        #maintext_federico {
+        #moon_maintext {
             font-size: 65px;
             font-weight: bolder;
             color: rgb(118, 69, 217);
         }
-        #secondarytext_federico {
+        #moon_secondarytext {
             font-size: 18px;
             color: #280D5F;
             font-weight: bold;
         }
-        .bottoni_federico {
+        .moon_bottoni {
             display: flex;
             width: 100%;
             justify-content: left;
             gap: 10px;
 
-                #mainbutton_federico {
+                #moon_mainbutton {
                     @include mainbuttons;
                 }
-                #secondarybutton_federico {
+                #moon_secondarybutton {
                     @include secondarybuttons;
                 }
         }
     }
 
-    .bottomright_federico {
+    .moon_bottomright {
         width: 50%;
         // height: 100%;
 
         img {
             max-width: 99%;
-            animation: 3s ease-in-out 0s infinite normal none running img-moon;
+            animation: 1s ease-in-out 0s infinite normal none running img-moon;
             // max-height: 100%;
         }
     }
@@ -181,14 +259,26 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .moon_federico {
-        padding: 0px 40px;
-        .top_federico {
+@keyframes slider {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-100vw, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    } 
+}
 
-            .countdown_federico {
+@media screen and (max-width: 1080px) { 
+    .moon_container {
+        padding: 0px 60px;
+        .moon_top {
 
-                .lottery_federico {
+            .moon_countdown {
+
+                .moon_lottery {
 
                     img:first-child {
                         width: 100%;
@@ -205,52 +295,82 @@
 }
 
 @media screen and (max-width: 968px) {
-    .moon_federico {
+    .moon_container {
 
-        .top_federico {
+        .moon_top {
 
-            .countdown_federico {
+            .moon_countdown {
 
-                .lottery_federico {
+                .moon_lottery {
 
                     img:first-child {
                         visibility: hidden;
                     }
                     img:last-child {
                         visibility: visible;
-                        padding-top: 50px;
+                        // padding-top: 50px;
                         // padding-right: 30px;
-                        right: 0;
+                        // right: 0;
+                        margin-top: 100px;
+                        bottom: -50px;
                         width: 40%;
                     }
                 }
-            }
+                .moon_lottery2 {
+                    #moon_sliderhide {
+                        visibility: visible;
+                    }
+                    #moon_sliderimg {
+                        visibility: hidden;
+                    }
+                }
 
         }
+    }
     }
 }
 
 @media screen and (max-width: 852px) {
-    .moon_federico {
+    .moon_container {
         padding: 0px 40px;
-        .bottom_federico {
+
+        .moon_top{
+
+            .moon_backgroundimg {
+                img {
+                    bottom: -25px;
+                }
+            }
+
+            .moon_countdown {
+                .moon_lottery2 {
+                    #moon_sliderhide {
+                        visibility: visible;
+                    }
+                    #moon_sliderimg {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        .moon_bottom {
             flex-direction: column;
 
-            .bottomleft_federico {
+            .moon_bottomleft {
                 order: 2;
                 width: 100%;
 
-                #maintext_federico {
+                #moon_maintext {
                     font-size: 45px;
                     // text-align: left;
                     width: 100%;
                 }
-                #secondarytext_federico {
+                #moon_secondarytext {
                     width: 100%;
                 }
             }
 
-            .bottomright_federico {
+            .moon_bottomright {
                 order: 1;
                 img {
                     margin-left: 200px;
@@ -264,14 +384,21 @@
 }
 
 @media screen and (max-width: 576px) {
-    .moon_federico {
+    .moon_container {
         padding: 0px 30px;
+        min-width: 100vw;
 
-        .top_federico {
+        .moon_top {
 
-            .countdown_federico {
+            .moon_countdown {
 
-                .lottery_federico {
+                .moon_counter {
+                    #moon_timerCountdown {
+                        font-size: 30px;
+                    }
+                }
+
+                .moon_lottery {
 
                     img:first-child {
                         visibility: hidden;
@@ -281,33 +408,100 @@
                         padding-top: 50px;
                         // padding-right: 30px;
                         right: 0;
-                        width: 40%;
+                        width: 50%;
+                    }
+                }
+
+                #moon_upto100 {
+                    font-size: 24px;
+                }
+
+                .moon_lottery2 {
+                    #moon_sliderhide {
+                        visibility: visible;
+                    }
+                    #moon_sliderimg {
+                        visibility: hidden;
                     }
                 }
             }
 
         }
 
-        .bottom_federico {
+        .moon_bottom {
             flex-direction: column;
 
-            .bottomleft_federico {
+            .moon_bottomleft {
                 order: 2;
                 width: 100%;
-                #maintext_federico {
+                #maintext {
                     font-size: 45px;
                 }
             }
 
-            .bottomright_federico {
+            .moon_bottomright {
                 order: 1;
                 img {
-                    margin-left: 200px;
-                    width: 80%;
+                    margin-left: 100px;
+                    width: 100%;
                     padding-bottom: 25px;
                 }
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .moon_container {
+        width: 100%;
+        .moon_top {
+
+            .moon_countdown {
+                max-width: 100%;
+
+                #moon_upto100 {
+                    font-size: 20px;
+                }
+
+                .moon_counter {
+
+                    .moon_timer {
+                        
+                        p {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .moon_lottery {
+
+                    img:first-child {
+                        visibility: hidden;
+                    }
+                    img:last-child {
+                        visibility: hidden;
+                    }
+                }
+                .moon_lottery2 {
+                    #moon_sliderimg {
+                        visibility: hidden;
+                    }
+                    #moon_sliderhide {
+                        visibility: hidden;
+
+                    }
+                }
+            }
+        }
+
+        .moon_bottom {
+
+            .moon_bottomright {
+
+                img {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

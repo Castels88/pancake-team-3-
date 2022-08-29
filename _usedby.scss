@@ -1,12 +1,12 @@
 
-.usedby_federico {
+.usedby_container {
     height: 50rem;
     width: 100%;
     padding-top: 100px;
     background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);;
     
 
-    .usedtop_federico {
+    .usedby_usedtop {
         width: 100%;
         height: 40%;
         display: flex;
@@ -31,7 +31,7 @@
         }
     }
 
-    .usedbottom_federico {
+    .usedby_usedbottom {
         width: 100%;
         height: 60%;
         display: flex;
@@ -39,7 +39,7 @@
         align-items: center;
         gap: 15px;
 
-        .card_federico {
+        .usedby_card {
             width: 280px;
             height: 300px;
             background-color: white;
@@ -48,32 +48,32 @@
             border-bottom: 8px solid lightgray;
             flex-wrap: wrap;
 
-            .card_top, 
-            .card_bottom {
+            .usedby_card_top, 
+            .usedby_card_bottom {
                 height: 50%;
                 width: 100%;
             }
-            .card_top {
+            .usedby_card_top {
                 position: relative;
                 img {
                     position: absolute;
                     right: 0;
                 }
             }
-            .card_bottom {
+            .usedby_card_bottom {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 h2 {
                     font-size: 40px;
                     color: #280D5F;
-                    #diff1 {
+                    #usedby_diff1 {
                         color: rgb(118, 69, 217);
                     }
-                    #diff2 {
+                    #usedby_diff2 {
                         color: rgb(31, 199, 212);
                     }
-                    #diff3 {
+                    #usedby_diff3 {
                         color: rgb(237, 75, 158);
                     }
                 }
@@ -83,23 +83,23 @@
 
 }
 
-@media screen and (max-width: 968px) {
+// @media screen and (max-width: 968px) {
     
-}
+// }
 
 @media screen and (max-width: 852px) {
-    .usedby_federico {
+    .usedby_container {
         height: auto;
-        .usedbottom_federico {
+        .usedby_usedbottom {
             flex-direction: column;
             padding-top: 30px;
             padding-bottom: 50px;
-            .card_federico {
+            .usedby_card {
                 height: 180px;
-                .card_top {
+                .usedby_card_top {
                     display: none;
                 }
-                .card_bottom {
+                .usedby_card_bottom {
                     
                     h2 {
                         font-size: 30px;
@@ -112,9 +112,9 @@
 }
 
 @media screen and (max-width: 576px) {
-    .usedby_federico {
+    .usedby_container {
 
-        .usedtop_federico {
+        .usedby_usedtop {
 
             p {
                 padding: 0px 20px;

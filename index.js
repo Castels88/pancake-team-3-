@@ -1,5 +1,7 @@
-let time = document.getElementById('timerCountdown');
-let data = "Jul 22, 2022 15:37:25";
+////
+
+let time = document.getElementById('moon_timerCountdown');
+let data = "Aug 30, 2022 15:37:25";
 let countDownDate = new Date(data).getTime();
 
 function tempo() {
@@ -17,13 +19,17 @@ function tempo() {
     }, 1000)
 }
 
+////
+
 tempo() 
 
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
+  
+////
 
-let lotteryChange = document.getElementById('lotteryChange')
+let lotteryChange = document.getElementById('moon_lotteryChange')
 
 function lotteryVariation() {
     setInterval( () => {
@@ -36,6 +42,39 @@ function lotteryVariation() {
 
 lotteryVariation()
 
+////
+
+const countdown = document.querySelector('moon_countdown')
+const slider = document.querySelector('moon_slider')
+
+let index = 0;
+
+function carousel() {
+//   let i;
+  let x = document.getElementsByClassName("moon_countdown");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  index++;
+  if (index > x.length) {index = 1}    
+  x[index-1].style.display = "flex";
+  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+carousel();
+
+////
+
+    // function sliderCarousel() {
+    //     const x = document.querySelector('slidertrasparente')
+    //     const y = document.querySelector('slidercolorato')
+
+    //     x.style.backgroundColor = 'red';
+    //     y.innerText = 'ac'
+    // }
+
+    // sliderCarousel();
 
 // .format
 // substring
