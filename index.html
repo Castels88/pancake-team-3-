@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="settings.css">
     <link rel="stylesheet" href="connect_wallet.css">
     <link rel="stylesheet" href="Assets/style.css" />
-
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -770,6 +770,28 @@
         </div>
 
     </div>
+    <div class="TA-box">
+        <svg viewbox="0 0 1660 48" preserveaspectratio="none" color="text" width="20px" xmlns="http://www.w3.org/2000/svg" class="TA-border1"><path d="M1660 48C1139.02 46.1887 336.256 15.2453 0 0H1660V48Z"></path></svg>
+        <div class="TA-container">
+       <div class="TA-container-main">
+        <h2 class="TA-container-main-header">Trade <span class="TA-container-main-header-span">anything. No registration, no hassle.</span></h2>
+        <p class="TA-container-main-paragraph">Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.</p>
+         <button class="TA-container-main-tradenow">Trade Now</button>
+         <a class="TA-container-main-learn" href="#">Learn</a>
+       </div>
+       <div class="TA-container-secondary">
+        <img class="TA-container-secondary-BNB" src="assets/images/BNB.png" alt="">
+        <img class="TA-container-secondary-BTC" src="assets/images/BTC.png" alt="">
+        <img class="TA-container-secondary-CAKE" src="assets/images/CAKE.png" alt="">
+       </div>
+       <div class="TA-container-mainmobile">
+        <h2 class="TA-container-mainmobile-header">Trade <span class="TA-container-main-header-span">anything. No registration, no hassle.</span></h2>
+        <p class="TA-container-mainmobile-paragraph">Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.</p>
+         <button class="TA-container-mainmobile-tradenow">Trade Now</button>
+         <a class="TA-container-mainmobile-learn" href="#">Learn</a>
+       </div>
+    </div>
+    </div>
     <!-- Earn Passive Income -->
     <div class="Earn_p_i_big_contaniner">
         <div class="Earn_p_i_top_container">
@@ -877,6 +899,7 @@
 
 
 </div>
+
 
 <!-- Inizio sezione HTML Laurent: Win millions, Cake-->
 <div class="winMillion-container">
@@ -1433,6 +1456,7 @@
 <script>
         const settings = document.querySelector(".Navbar_settings_menu svg")
         const connectWallet = document.querySelector(".Navbar_main_buttons")
+        const startConnectWallet = document.querySelector('.mainbuttons')
         const container1 = document.querySelector(".big_container")
         const container2 = document.querySelector(".big_container2")
         const exit = document.querySelector(".exit")
@@ -1442,6 +1466,9 @@
             container1.style.display = "block";
         }
         connectWallet.onclick = function () {
+            container2.style.display = "block";
+        }
+        startConnectWallet.onclick = function () {
             container2.style.display = "block";
         }
         exit.onclick = function () {
