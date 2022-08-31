@@ -1,10 +1,12 @@
+
+@use 'moon2';
+@use 'usedby';
 @use "moduloRoot";
-@use "modulo_navbar";
+@use "assets/modules/modulo_navbar";
 
 * {
     font-family: 'Kanit';
 }
-
 
 
 
