@@ -414,7 +414,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container1 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -436,7 +436,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container2 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -458,7 +458,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container3 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -480,7 +480,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container4 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -502,7 +502,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container .Earn_p_i_container5 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -568,7 +568,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container1 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -590,7 +590,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container2 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -612,7 +612,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container3 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -634,7 +634,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container4 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(118, 69, 217);
@@ -656,7 +656,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container .Earn_p_i_container5 {
-  width: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -677,7 +677,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #7A6EAA;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 371px) {
   nav .Navbar_sinistra {
     width: 50%;
   }
@@ -771,7 +771,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     height: 800px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container {
-    width: 125%;
+    width: 100%;
     height: 800px;
     flex-direction: column;
     align-items: center;
@@ -846,7 +846,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: flex-start;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -855,15 +855,15 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     gap: 15px;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 {
-    width: 100%;
-    height: 47%;
+    width: 70%;
+    height: 40%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1129,7 +1129,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 10px;
   }
   nav .Navbar_destra {
-    width: 70%;
+    width: 40%;
     height: 56px;
     display: flex;
     justify-content: flex-end;
@@ -2528,14 +2528,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .TA-box .TA-container-main-header {
   color: #7645d9;
-  font-weight: bolder;
   font-size: 42px;
   width: 420px;
   margin-bottom: 2rem;
 }
 .TA-box .TA-container-main-header-span {
   color: #280d5f;
-  font-weight: bolder;
 }
 .TA-box .TA-container-main-paragraph {
   color: #7a6eaa;
@@ -2631,11 +2629,14 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .TA-border1 {
     fill: #d8cbed;
     width: 100%;
-    position: relative;
-    bottom: 1px;
+    position: absolute;
+    top: -1px;
     max-height: 48px;
     align-self: center;
     flex-shrink: 0;
+  }
+  .TA-box {
+    position: relative;
   }
   .TA-box .TA-container-main {
     display: none;
@@ -2645,7 +2646,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   .TA-box .TA-container-secondary-CAKE {
     position: relative;
-    right: 6rem;
+    right: 8rem;
     height: 40%;
     -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
             animation: 3s ease-in-out 0s infinite normal none running TA-floating;
@@ -2654,7 +2655,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     position: relative;
     height: 40%;
     top: 0.8rem;
-    left: 8rem;
+    left: 5rem;
     -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
             animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
   }
@@ -2662,7 +2663,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     position: relative;
     height: 40%;
     top: 0.5rem;
-    left: 20rem;
+    left: 18rem;
     -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
             animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
