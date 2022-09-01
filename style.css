@@ -224,7 +224,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   height: 600px;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
   z-index: 1;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -260,7 +259,19 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 350px;
   height: 400px;
   position: absolute;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+}
+@-webkit-keyframes img-wallet {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 @keyframes img-wallet {
   0% {
@@ -277,12 +288,14 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 400px;
   height: 400px;
   position: absolute;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
   width: 350px;
   height: 400px;
-  animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+          animation: 3s ease-in-out 0s infinite normal none running img-wallet;
 }
 .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
   width: 50%;
@@ -375,7 +388,19 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  animation: 1s ease-in-out 3s normal none running movimento;
+  -webkit-animation: 1s ease-in-out 3s normal none running movimento;
+          animation: 1s ease-in-out 3s normal none running movimento;
+}
+@-webkit-keyframes movimento {
+  50% {
+    transform: translateY(30px);
+  }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 @keyframes movimento {
   50% {
@@ -528,7 +553,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   display: flex;
   padding: 10px;
   gap: 15px;
-  animation: 1s ease-in-out 3s normal none running movimento;
+  -webkit-animation: 1s ease-in-out 3s normal none running movimento;
+          animation: 1s ease-in-out 3s normal none running movimento;
 }
 @keyframes movimento {
   50% {
@@ -704,7 +730,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-radius: 20px;
     color: white;
   }
-
   .navbar_menu_nascosto {
     display: flex;
     align-items: center;
@@ -741,7 +766,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     font-weight: 400;
     font-size: 10px;
   }
-
   .Earn_p_i_big_contaniner {
     width: 100%;
     height: 800px;
@@ -750,7 +774,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 125%;
     height: 800px;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
     z-index: 1;
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -790,18 +813,21 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image2 {
     width: 187px;
     height: 192px;
     position: absolute;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .earn_p_i_img_container .earn_p_i_image3 {
     width: 187px;
     height: 192px;
-    animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-wallet;
+            animation: 3s ease-in-out 0s infinite normal none running img-wallet;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_central_container .Earn_p_i_h2_container {
     width: 100%;
@@ -1219,6 +1245,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 .moon_container .moon_top {
   overflow: hidden;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -1288,6 +1316,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .moon_container .moon_top .moon_countdown .moon_counter {
   background-color: #280D5F;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: 40px;
   border-radius: 10px;
@@ -1313,6 +1343,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 .moon_container .moon_top .moon_countdown .moon_lottery img {
   position: absolute;
   height: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   bottom: 0;
   right: 0;
@@ -1364,6 +1396,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .moon_container .moon_bottom {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -1428,7 +1462,20 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .moon_container .moon_bottom .moon_bottomright img {
   max-width: 99%;
-  animation: 1s ease-in-out 0s infinite normal none running img-moon;
+  -webkit-animation: 1s ease-in-out 0s infinite normal none running img-moon;
+          animation: 1s ease-in-out 0s infinite normal none running img-moon;
+}
+
+@-webkit-keyframes img-moon {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes img-moon {
@@ -1437,6 +1484,17 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   50% {
     transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes slider {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-100vw, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -1947,7 +2005,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .cake-container .cake-content .cake-buttons a:hover {
   text-decoration: underline;
-  text-decoration-color: #1fc7d4;
+  -webkit-text-decoration-color: #1fc7d4;
+          text-decoration-color: #1fc7d4;
 }
 .cake-container .cake-content .cake-image {
   grid-area: pic;
@@ -1981,7 +2040,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     position: relative;
   }
   .cake-container .cake-content .cake-image picture .bottom-right-cake {
-    animation: 3s ease-in-out 0s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0s infinite normal none running img-moon;
     position: absolute;
     bottom: -80px;
     right: 0;
@@ -1989,7 +2049,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .top-right-cake {
-    animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.3s infinite normal none running img-moon;
     position: absolute;
     top: 0;
     right: 0;
@@ -1997,7 +2058,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .top-left-cake {
-    animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.6s infinite normal none running img-moon;
     position: absolute;
     top: 0;
     left: -260px;
@@ -2005,7 +2067,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     width: 400px;
   }
   .cake-container .cake-content .cake-image picture .coin-cake {
-    animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+    -webkit-animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
+            animation: 3s ease-in-out 0.9s infinite normal none running img-moon;
     position: absolute;
     height: 350px;
     width: 400px;
@@ -2016,7 +2079,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "d1 d2 d3" "d4 d5 d6";
     row-gap: 25px;
-    column-gap: 150px;
+    -moz-column-gap: 150px;
+         column-gap: 150px;
   }
   .cake-container .cake-data-table .data1  {
     grid-area: d1;
@@ -2069,7 +2133,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "d1 d2" "d3 d4" "d5 d6";
     row-gap: 25px;
-    column-gap: 150px;
+    -moz-column-gap: 150px;
+         column-gap: 150px;
   }
   .cake-container .cake-content .cake-data-table .data1  {
     grid-area: d1;
@@ -2130,9 +2195,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   z-index: 1;
   position: relative;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   overflow: hidden;
   vertical-align: middle;
@@ -2171,7 +2234,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .text .mainbuttons {
   position: relative;
-  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -2181,7 +2243,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
-  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -2210,7 +2271,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-down .first-img {
   width: 250px;
-  animation: 3s ease-in-out 1s infinite normal none running motion-2;
+  -webkit-animation: 3s ease-in-out 1s infinite normal none running motion-2;
+          animation: 3s ease-in-out 1s infinite normal none running motion-2;
 }
 .container-MySect .box-img-animated-1 .img-middle {
   height: 100%;
@@ -2220,7 +2282,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-middle .second-img {
   width: 250px;
-  animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+  -webkit-animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+          animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
 }
 .container-MySect .box-img-animated-1 .img-up {
   height: 100%;
@@ -2230,7 +2293,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-1 .img-up .third-img {
   width: 250px;
-  animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+  -webkit-animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+          animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
 }
 .container-MySect .box-img-animated-2 {
   position: relative;
@@ -2245,7 +2309,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-down-2 .first-img-2 {
   width: 250px;
-  animation: 3s ease-in-out 1s infinite normal none running motion-2;
+  -webkit-animation: 3s ease-in-out 1s infinite normal none running motion-2;
+          animation: 3s ease-in-out 1s infinite normal none running motion-2;
 }
 .container-MySect .box-img-animated-2 .img-middle-2 {
   height: 100%;
@@ -2255,7 +2320,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-middle-2 .second-img-2 {
   width: 250px;
-  animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+  -webkit-animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
+          animation: 3s ease-in-out 0.66s infinite normal none running motion-3;
 }
 .container-MySect .box-img-animated-2 .img-up-2 {
   height: 100%;
@@ -2265,7 +2331,20 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .container-MySect .box-img-animated-2 .img-up-2 .third-img-2 {
   width: 250px;
-  animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+  -webkit-animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+          animation: 3s ease-in-out 0.33s infinite normal none running motion-4;
+}
+
+@-webkit-keyframes motion-2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(3px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes motion-2 {
@@ -2279,12 +2358,34 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     transform: translate(0px, 0px);
   }
 }
+@-webkit-keyframes motion-3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes motion-3 {
   0% {
     transform: translate(0px, 0px);
   }
   50% {
     transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes motion-4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(6px, 5px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2305,47 +2406,36 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
-
   #img-down-res {
     left: -231px;
   }
-
   .img-middle {
     left: none;
   }
-
   #img-middle-res {
     left: -238px;
   }
-
   .img-up {
     left: none;
   }
-
   #img-up-res {
     left: -239px;
   }
-
   .img-down-2 {
     left: none;
   }
-
   #img-down-res-2 {
     left: 430px;
   }
-
   .img-middle-2 {
     left: none;
   }
-
   #img-middle-res-2 {
     left: 416px;
   }
-
   .img-up-2 {
     left: none;
   }
-
   #img-up-res-2 {
     left: 419px;
   }
@@ -2354,47 +2444,36 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .img-down {
     left: none;
   }
-
   #img-down-res {
     left: -276px;
   }
-
   .img-middle {
     left: none;
   }
-
   #img-middle-res {
     left: -287px;
   }
-
   .img-up {
     left: none;
   }
-
   #img-up-res {
     left: -286px;
   }
-
   .img-down-2 {
     left: none;
   }
-
   #img-down-res-2 {
     left: 487px;
   }
-
   .img-middle-2 {
     left: none;
   }
-
   #img-middle-res-2 {
     left: 466px;
   }
-
   .img-up-2 {
     left: none;
   }
-
   #img-up-res-2 {
     left: 479px;
   }
@@ -2403,7 +2482,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .head {
     font-size: none;
   }
-
   #head-res {
     font-size: 30px;
   }
@@ -2498,6 +2576,17 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   position: relative;
   width: 25%;
 }
+@-webkit-keyframes TA-floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes TA-floating {
   0% {
     transform: translate(0px, 0px);
@@ -2513,21 +2602,24 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   position: relative;
   right: 20rem;
   height: 80%;
-  animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+  -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+          animation: 3s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-secondary-BTC {
   position: relative;
   height: 60%;
   top: 3rem;
   left: 2rem;
-  animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+  -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+          animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-secondary-BNB {
   position: relative;
   height: 70%;
   top: 2.5rem;
   left: 22rem;
-  animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+  -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+          animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
 }
 .TA-box .TA-container-mainmobile {
   display: none;
@@ -2538,12 +2630,13 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 @media screen and (max-width: 880px) {
   .TA-border1 {
     fill: #d8cbed;
-    width: 150%;
+    width: 100%;
+    position: relative;
+    bottom: 1px;
     max-height: 48px;
     align-self: center;
     flex-shrink: 0;
   }
-
   .TA-box .TA-container-main {
     display: none;
   }
@@ -2554,21 +2647,24 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     position: relative;
     right: 6rem;
     height: 40%;
-    animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+    -webkit-animation: 3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BTC {
     position: relative;
     height: 40%;
     top: 0.8rem;
     left: 8rem;
-    animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+    -webkit-animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.3s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-secondary-BNB {
     position: relative;
     height: 40%;
     top: 0.5rem;
     left: 20rem;
-    animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+    -webkit-animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
+            animation: 2.4s ease-in-out 0s infinite normal none running TA-floating;
   }
   .TA-box .TA-container-mainmobile {
     margin: 10px;
@@ -2615,6 +2711,4 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .TA-box .TA-container-mainmobile-learn:hover {
     text-decoration: underline;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

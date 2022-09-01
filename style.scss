@@ -140,7 +140,9 @@
 @media screen and (max-width: 880px) {
   .TA-border1 {
   fill: #d8cbed;
-  width: 150%;
+  width: 100%;
+  position:relative;
+  bottom:1px;
   max-height: 48px;
   align-self: center;
   flex-shrink: 0;
