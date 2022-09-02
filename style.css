@@ -1543,7 +1543,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   gap: 10px;
   z-index: 1;
 }
-.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton {
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbuttons {
   border: 1px solid #1FC7D4;
   border-radius: 15px;
   width: 150px;
@@ -1554,7 +1554,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   background-color: #1FC7D4;
   transition: all 0.3s ease;
 }
-.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton:hover {
+.moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbuttons:hover {
   opacity: 0.7;
 }
 .moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_secondarybutton {

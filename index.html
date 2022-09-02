@@ -824,7 +824,7 @@
                 <p id="moon_secondarytext">Trade, earn, and win crypto on the most popular decentralized platform in the
                     galaxy.</p>
                 <div class="moon_bottoni">
-                    <button id="moon_mainbutton">Connect Wallet</button>
+                    <button id="moon_mainbuttons">Connect Wallet</button>
                     <a href="https://pancakeswap.finance/swap"><button id="moon_secondarybutton">Trade Now</button></a>
                 </div>
             </div>
@@ -1536,6 +1536,7 @@
         const settings = document.querySelector(".Navbar_settings_menu svg")
         const connectWallet = document.querySelector(".Navbar_main_buttons")
         const startConnectWallet = document.querySelector('.mainbuttons')
+        const startConnectWallet2 = document.querySelector("#moon_mainbuttons")
         const container1 = document.querySelector(".big_container")
         const container2 = document.querySelector(".big_container2")
         const exit = document.querySelector(".exit")
@@ -1548,6 +1549,9 @@
             container2.style.display = "block";
         }
         startConnectWallet.onclick = function () {
+            container2.style.display = "block";
+        }
+        startConnectWallet2.onclick = function () {
             container2.style.display = "block";
         }
         exit.onclick = function () {
