@@ -2235,7 +2235,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     align-items: center;
   }
   .cake-container .cake-content .cake-image {
-    align-self: flex-end;
+    display: flex;
+    height: 150px;
   }
   .cake-container .cake-content .cake-image picture {
     position: relative;
@@ -2253,8 +2254,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "d1 d2" "d3 d4" "d5 d6";
     row-gap: 25px;
-    -moz-column-gap: 150px;
-         column-gap: 150px;
+    margin-top: 50px;
   }
   .cake-container .cake-content .cake-data-table .data1  {
     grid-area: d1;
