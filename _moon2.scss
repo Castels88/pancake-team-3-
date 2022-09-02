@@ -224,7 +224,7 @@
             width: 100%;
             justify-content: left;
             gap: 10px;
-
+            z-index: 1;
                 #moon_mainbutton {
                     @include mainbuttons;
                 }
@@ -368,6 +368,9 @@
                 #moon_secondarytext {
                     width: 100%;
                 }
+                .moon_bottoni{
+                    z-index: 1;
+                }
             }
 
             .moon_bottomright {
@@ -436,6 +439,9 @@
                 width: 100%;
                 #maintext {
                     font-size: 45px;
+                }
+                .moon_bottoni{
+                    z-index: 1;
                 }
             }
 

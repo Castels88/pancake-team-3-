@@ -1537,6 +1537,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   width: 100%;
   justify-content: left;
   gap: 10px;
+  z-index: 1;
 }
 .moon_container .moon_bottom .moon_bottomleft .moon_bottoni #moon_mainbutton {
   border: 1px solid #1FC7D4;
@@ -1676,6 +1677,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .moon_container .moon_bottom .moon_bottomleft #moon_secondarytext {
     width: 100%;
   }
+  .moon_container .moon_bottom .moon_bottomleft .moon_bottoni {
+    z-index: 1;
+  }
   .moon_container .moon_bottom .moon_bottomright {
     order: 1;
   }
@@ -1720,6 +1724,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   .moon_container .moon_bottom .moon_bottomleft #maintext {
     font-size: 45px;
+  }
+  .moon_container .moon_bottom .moon_bottomleft .moon_bottoni {
+    z-index: 1;
   }
   .moon_container .moon_bottom .moon_bottomright {
     order: 1;
