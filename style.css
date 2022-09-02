@@ -2281,6 +2281,57 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     border-left: 2px solid rgba(122, 110, 170, 0.4);
   }
 }
+@media screen and (max-width: 370px) {
+  .cake-container .cake-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cake-container .cake-content .cake-image {
+    display: flex;
+    height: 150px;
+  }
+  .cake-container .cake-content .cake-image picture {
+    position: relative;
+  }
+  .cake-container .cake-content .cake-image picture img {
+    position: absolute;
+    height: 150px;
+    width: 200;
+  }
+  .cake-container .cake-content .cake-buttons button {
+    width: 150px !important;
+  }
+  .cake-container .cake-content .cake-data-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "d1 d2" "d3 d4" "d5 d6";
+    row-gap: 25px;
+    margin-top: 12px;
+  }
+  .cake-container .cake-content .cake-data-table .data1  {
+    grid-area: d1;
+  }
+  .cake-container .cake-content .cake-data-table .data-2 {
+    grid-area: d2;
+  }
+  .cake-container .cake-content .cake-data-table .data-3 {
+    grid-area: d3;
+  }
+  .cake-container .cake-content .cake-data-table .data-4 {
+    grid-area: d4;
+  }
+  .cake-container .cake-content .cake-data-table .data-5 {
+    grid-area: d5;
+  }
+  .cake-container .cake-content .cake-data-table .data-6 {
+    grid-area: d6;
+  }
+  .cake-container .cake-content .cake-data-table .data {
+    border-left: 2px solid rgba(122, 110, 170, 0.4);
+  }
+}
 * {
   margin: 0;
   padding: 0;
