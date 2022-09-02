@@ -139,7 +139,6 @@ nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
-  z-index: 1;
 }
 nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
   display: block;
@@ -1128,7 +1127,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: flex-start;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
     width: 100%;
@@ -1167,9 +1166,6 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   nav .Navbar_destra .Navbar_money {
     display: none;
-  }
-  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content {
-    z-index: 1;
   }
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
@@ -1308,8 +1304,8 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     height: 45%;
     padding: 10px;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: flex-start;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container .Earn_p_i_lower_big_container {
