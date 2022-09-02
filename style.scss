@@ -29,6 +29,10 @@
     box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .TA-border1 {
   fill: #d8cbed;
   width: 100%;
