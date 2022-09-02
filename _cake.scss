@@ -21,6 +21,7 @@
         @include fontStyle(40px, #280d5f);
         font-weight: 550;
         line-height: 45px;
+        padding: 1rem;
         .purple-cake {
           color: rgb(118, 69, 217);
         }
@@ -31,6 +32,9 @@
       text-align: left;
       @include fontStyle(16px, rgb(122, 110, 170));
       font-weight: 300;
+      p {
+        padding: 1rem;
+      }
     }
     .cake-buttons {
       grid-area: buttons;

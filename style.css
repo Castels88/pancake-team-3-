@@ -2077,6 +2077,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   color: #280d5f;
   font-weight: 550;
   line-height: 45px;
+  padding: 1rem;
 }
 .cake-container .cake-content .cake-title h2 .purple-cake {
   color: rgb(118, 69, 217);
@@ -2087,6 +2088,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   font-size: 16px;
   color: rgb(122, 110, 170);
   font-weight: 300;
+}
+.cake-container .cake-content .cake-description p {
+  padding: 1rem;
 }
 .cake-container .cake-content .cake-buttons {
   grid-area: buttons;
