@@ -1127,7 +1127,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-content: flex-start;
   }
   .Earn_p_i_big_contaniner .Earn_p_i_top_container .Earn_p_i_bottom_switch_container2 .Earn_p_i_lower_big_container {
     width: 100%;
