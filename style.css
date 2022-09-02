@@ -1792,9 +1792,11 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 .usedby_container .usedby_usedtop p {
   padding-bottom: 20px;
+  color: rgb(122, 110, 170);
 }
 .usedby_container .usedby_usedtop span {
   font-weight: bold;
+  color: rgb(122, 110, 170);
 }
 .usedby_container .usedby_usedbottom {
   width: 100%;
