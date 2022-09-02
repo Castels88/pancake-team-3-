@@ -139,6 +139,7 @@ nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content {
   border: 1px solid rgb(216, 212, 212);
   border-radius: 10px;
   display: block;
+  z-index: 1;
 }
 nav .Navbar_destra .Navbar_language:hover .Navbar_dropdown_content:hover .Navbar_element {
   display: block;
@@ -1166,6 +1167,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   }
   nav .Navbar_destra .Navbar_money {
     display: none;
+  }
+  nav .Navbar_destra .Navbar_language .Navbar_dropdown_content {
+    z-index: 1;
   }
   nav .Navbar_destra .Navbar_main_buttons {
     display: flex;
