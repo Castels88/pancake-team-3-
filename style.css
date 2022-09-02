@@ -2229,7 +2229,7 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
 }
 @media screen and (max-width: 851px) {
   .cake-container .cake-content {
-    padding: 40px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
