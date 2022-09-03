@@ -465,6 +465,14 @@
 
             .moon_countdown {
                 max-width: 100%;
+                
+                .moon_counter {
+                    .moon_timer {
+                        #moon_timerCountdown {
+                            font-size: 24px;
+                        }
+                    }
+                }
 
                 #moon_upto100 {
                     font-size: 20px;
