@@ -2063,6 +2063,12 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
     box-shadow: -1px 7px 0px hwb(260 26% 50%);
   }
 }
+@media screen and (max-width: 370px) {
+  .winMillion-container .winMillion-content .card-container .card .card-button button {
+    font-size: 14px;
+    color: white;
+  }
+}
 .cake-container {
   height: 50rem;
   width: 100%;
