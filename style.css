@@ -1745,6 +1745,9 @@ nav .Navbar_destra .Navbar_main_buttons:hover {
   .moon_container .moon_top .moon_countdown {
     max-width: 100%;
   }
+  .moon_container .moon_top .moon_countdown .moon_counter .moon_timer #moon_timerCountdown {
+    font-size: 24px;
+  }
   .moon_container .moon_top .moon_countdown #moon_upto100 {
     font-size: 20px;
   }

@@ -156,6 +156,7 @@
   width: 150px;
   max-height: 400px;
   flex-direction: column;
+  z-index: 1;
 }
 .Container-Footer-Latestbar-Left .language .dropdown_content .element {
   height: 48px;
