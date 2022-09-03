@@ -134,6 +134,7 @@ nav {
                 border:1px solid rgb(216, 212, 212);
                 border-radius: 10px;
                 display: block;
+                z-index: 1;
                 &:hover .Navbar_element{
                     display: block;
                 }
@@ -1291,6 +1292,7 @@ nav {
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
+                flex-wrap: nowrap;
                 align-items: flex-start;
                 .Earn_p_i_lower_big_container{
                     width: 70%;
@@ -1308,6 +1310,7 @@ nav {
                 height: 40%;
                 padding: 10px;
                 display: flex;
+                flex-wrap: nowrap;
                 flex-direction: column;
                 align-items: flex-start;
                 .Earn_p_i_lower_big_container{
