@@ -1,7 +1,7 @@
 ////
 
 let time = document.getElementById('moon_timerCountdown');
-let data = "Aug 30, 2022 15:37:25";
+let data = "Sept 05, 2022 22:37:25";
 let countDownDate = new Date(data).getTime();
 
 function tempo() {
