@@ -1,6 +1,3 @@
-@use 'moduloRoot';
-// @use 'assets/modules/buttons';
-
 @mixin mainbuttons {
     border:1px solid #1FC7D4;
     border-radius:15px;
@@ -82,7 +79,7 @@
                 -webkit-text-stroke: 6px transparent;
             }
 
-            #moon_mainbutton {
+            .moon_mainbutton {
                 @include mainbuttons;
             }
 
@@ -151,7 +148,7 @@
                 }
             }
 
-            #moon_mainbutton {
+            .moon_mainbutton {
                 @include mainbuttons;
             }
         }
@@ -244,18 +241,6 @@
             // max-height: 100%;
         }
     }
-    }
-}
-
-@keyframes img-moon {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    50% {
-        transform: translate(-5px, -5px);
-    }
-    100% {
-        transform: translate(0px, 0px);
     }
 }
 
