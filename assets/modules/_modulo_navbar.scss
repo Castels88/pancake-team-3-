@@ -134,6 +134,7 @@ nav {
                 border:1px solid rgb(216, 212, 212);
                 border-radius: 10px;
                 display: block;
+                z-index: 1;
                 &:hover .Navbar_element{
                     display: block;
                 }
@@ -964,7 +965,9 @@ nav {
                 }
             }
         }
-    }   
+    }
+    
+    
 }
 @media screen and (max-width:576px){
     nav{
@@ -1112,7 +1115,7 @@ nav {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                align-items: flex-start;
+                align-content: flex-start;
                 .Earn_p_i_lower_big_container{
                     width: 100%;
                     height: 50%;
@@ -1154,6 +1157,11 @@ nav {
             }            
             .Navbar_money{
                 display: none;
+            }
+            .Navbar_language{
+                .Navbar_dropdown_content{
+                    z-index: 1;
+                }
             }
             .Navbar_main_buttons{
                 display: flex;
@@ -1286,10 +1294,11 @@ nav {
                 }
             }
             .Earn_p_i_bottom_switch_container{
-                width: 70%;
+                width: 70% ;
                 height: 45%;
                 padding: 10px;
                 display: flex;
+                flex-wrap: nowrap;
                 flex-direction: column;
                 align-items: flex-start;
                 .Earn_p_i_lower_big_container{
@@ -1308,6 +1317,7 @@ nav {
                 height: 40%;
                 padding: 10px;
                 display: flex;
+                flex-wrap: nowrap;
                 flex-direction: column;
                 align-items: flex-start;
                 .Earn_p_i_lower_big_container{
